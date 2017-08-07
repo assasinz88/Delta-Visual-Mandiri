@@ -1,0 +1,60 @@
+.container{
+	width:960px;
+	margin: 0px auto;
+
+}
+
+#banner1{
+	background-color:grey;
+	color:black;
+}
+#banner2{
+	background-color:blue;
+	color:cyan;
+	width:260px;
+	float:left;
+}
+#banner3{
+	background-color:yellow;
+	color:red;
+	width:700px;
+	float:left;
+}
+
+@media screen and (max-width:959px){
+	.container{
+		width:100%;
+
+	}
+
+	#banner1{
+		width:100%;
+	}
+	#banner2{
+		width:70%;
+	}
+	#banner3{
+		width:30%;
+	}
+	img{
+		width:100%;
+	}
+
+}
+@media screen and (max-width:640px){
+	#banner1{
+		width:100%;
+	}
+	#banner2{
+		width:100%;
+	}
+	#banner3{
+		width:100%;
+	}
+}
+
+@media screen and (max-width:320px){
+	.container{
+		width:320px;
+	}
+}
