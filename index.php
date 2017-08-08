@@ -89,11 +89,9 @@
 
 					<h1 class="home-title text-center borders"> HOME </h1>
 
-					<div class="slideshow">
+					<div class="carousel">
 
-						<div class="flexslider">
-
-							<ul class="slider">
+							<ul>
 
 								<li>
 
@@ -108,8 +106,6 @@
 								</li>
 
 							</ul>
-
-						</div>
 
 					</div>
 
@@ -219,12 +215,15 @@
 			},1000);
 		});
 
-		$(document).ready(function () {
-        $('.flexslider').flexslider({
-            animation: 'fade',
-            controlsContainer: '.flexslider'
-        });
-    });
+		$(document).ready(function(){
+			// Set the interval to be 5 seconds
+			var t = setInterval(function(){
+				$(".carousel ul").animate({marginLeft:-480},1000,function(){
+					$(this).find("li:last").after($(this).find("li:first"));
+					$(this).css({marginLeft:0});
+				})
+			},5000);
+		});
 
 
 	</script>
