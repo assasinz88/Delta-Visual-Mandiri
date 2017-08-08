@@ -23,6 +23,7 @@ a{
 
 #header{
 	height:90px;
+	border-bottom:3px solid #A7CECB;
 }
 
 .header-logo{
@@ -208,34 +209,45 @@ a{
   transform: scaleX(1);
 }
 
-
 #home{
 	/* insert font*/
-	background-image: url("img/giphy.gif");
-	background-repeat: initial;
-	background-attachment: fixed;
-	background-position: 0% 20%;
-	background-size:100% auto;
-	height:300px;
+	height:100%;
 }
 
-.carousel{
-	width:480px;
-	overflow:hidden;
+.single-item{
+	height:400px;
 }
 
-.carousel ul{
-	width:1920px;
-	padding:0;
-	margin:0;
+#home label{
+	width: 20px;
+	height:100%;
+	top:100px;
+    position: absolute;
+    /*display: none;
+	opacity: 0;*/
+    z-index: 1000000000;
+    cursor: pointer;
+
+    transition: opacity .2s;
+
+    color: #000000;
+    font-size: 18pt;
+    text-align: center;
+
+    font-family: "Varela Round", sans-serif;
+    background-color: rgba(255, 255, 255, .3);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
 }
 
-.carousel ul li{
-	width:480px;
-	text-align: center;
-	height: 280px;
-	list-style: none;
-	float:	left;
+#home:hover + label { opacity: 0.5; }
+
+#home label:hover { opacity: 1; }
+
+#home .next { right: 0; }
+
+
+.carousel_img{
+
 }
 
 #about{
@@ -277,6 +289,7 @@ a{
 @media only screen and (max-width: 357px) {
 	.container-fluid{
 		width:357px;
+		background-color:black;
 	}
 
 	#home, #about {
