@@ -444,9 +444,6 @@ a{
 
 @media only screen and (min-width: 637px) { /* smartphone landscape */
 
-	#logo-text{
-		left:40%;
-	}
 
 	#home{
 		height:250px;
