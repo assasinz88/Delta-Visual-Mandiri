@@ -357,7 +357,18 @@ a{
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
-	height:400px;
+	height:auto;
+}
+
+
+
+.icon{
+	display:block;
+	width:100px;
+	height:100px;
+	margin:30px auto;
+
+
 }
 
 #more{
