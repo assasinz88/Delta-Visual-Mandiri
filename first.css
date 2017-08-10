@@ -42,6 +42,7 @@ a{
 	margin:10px 30px;
 	opacity:1;
 	color:#445552;
+	font-weight:bold;
 }
 
 .header-logo > img{
@@ -99,7 +100,7 @@ a{
   position: absolute;
   height: 4px; /* thickness */
   width: 100%;
-  background-color:rgba(0,0,0,1);/*#445552*/
+  background-color:#445552;/*#445552*/
   border-radius: 9px;
   opacity: 1;
   top: -10px;
@@ -275,14 +276,24 @@ a{
 
 
 #about{
+	padding: 30px 0px;
+	border-top:3px solid #A7CECB;
 	background-color:#FFFFFF;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
 	height:400px;
+
+	font-size:16px;
+}
+
+.about-title{
+	color:#8BA6A9;
+	font-weight:bold;
 }
 
 #gallery{
+	border-top:3px solid #A7CECB;
 	background-color:#F4EBBE;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -297,6 +308,7 @@ a{
 
 
 #product{
+	border-top:3px solid #A7CECB;
 	background-color:#CACC90;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -305,6 +317,7 @@ a{
 }
 
 #contact{
+	border-top:3px solid #A7CECB;	
 	background-color:#8BA6A9;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
