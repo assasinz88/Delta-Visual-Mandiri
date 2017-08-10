@@ -5,12 +5,14 @@
 
 *{
 	font-family: SuperGroteskA;
+
 	
 }
 
 /* Smartphone Size */
 .container-fluid{
 	margin: 0px 0px 0px 0px;
+
 }
 
 a{
@@ -249,7 +251,7 @@ a{
 	background-color:rgba(0,0,0,0.3);
 	height:400px;
 	width:auto;
-	z-index:-1;
+
 }
 
 #home label{ /*arrow*/
@@ -282,8 +284,8 @@ a{
 	text-align:center;
 	color:white;
 	font-size:36px;
-	vertical-align:middle;
-	padding-top:50%;
+
+
 }
 
 
@@ -322,6 +324,9 @@ a{
 	top:5%;
 	padding-bottom:20px;
 	height:300px;
+	width:auto !important;
+
+
 }
 
 .gallery-carousel:hover .gallery-caption{
@@ -453,12 +458,7 @@ a{
 		height:250px !important;
 	}
 
-	.home-text{
-
-		margin-top:18%;
-	}
-
-	.layer_img{
+	.layer{
 		height:250px;
 	}
 
