@@ -137,7 +137,7 @@ a{
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
-  transform: rotate(45deg);
+  transform: rotate(45deg);	
 }
 
 .hamburger.open span:nth-child(3) {
@@ -246,8 +246,13 @@ a{
 	background-position:55% 0%;
 	background-size:cover;
 	height:400px !important;	
+}
 
-
+.layer{
+	background-color:rgba(0,0,0,0.3);
+	height:400px;
+	width:auto;
+	z-index:-1;
 }
 
 #home label{ /*arrow*/
@@ -276,6 +281,13 @@ a{
 
 #home .next { right: 0; }
 
+.home-text{
+	text-align:center;
+	color:white;
+	font-size:36px;
+	vertical-align:middle;
+	padding-top:50%;
+}
 
 
 #about{
@@ -360,7 +372,9 @@ a{
 	height:auto;
 }
 
-
+.product-intro{
+	text-align:center;
+}
 
 .icon{
 	display:block;
@@ -413,10 +427,9 @@ a{
 	transition: all .5s ease-out;
 }
 
-@media only screen and (max-width: 357px) {
+@media only screen and (max-width: 357px) { /* lesser than smartphone size */
 	.container-fluid{
 		width:357px;
-		background-color:black;
 	}
 
 	#home, #about {
@@ -426,4 +439,51 @@ a{
 	.header-logo{
 		position:absolute;
 	}
+}
+
+@media only screen and (min-width: 637px) { /* smartphone landscape */
+
+	#home{
+		height:250px;
+	}
+	.single-item{
+		height:250px !important;
+	}
+
+	.carousel_img{
+		background-position:55% 90% !important;
+		background-size:cover;
+		height:250px !important;
+	}
+
+	.home-text{
+
+		margin-top:18%;
+	}
+
+	.layer_img{
+		height:250px;
+	}
+
+	#about{
+		height:250px;
+	}
+
+	#gallery{
+		height:300px;
+	}
+
+	.gallery-carousel{
+		height:150px;
+	}
+
+	.gallery-slide{
+		height:150px !important;
+	}
+
+	.gallery-title{
+		margin-top:25px;
+	}
+
+
 }
