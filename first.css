@@ -301,8 +301,15 @@ a{
 	height:600px;
 	padding:0 !important;
 }
+
+.gallery-title{
+	margin-top:50px;
+}
+
 .gallery-carousel{
-	top:25%;
+	top:5%;
+	padding-bottom:20px;
+	height:300px;
 }
 
 .gallery-carousel:hover .gallery-caption{
