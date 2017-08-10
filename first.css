@@ -99,7 +99,7 @@ a{
   position: absolute;
   height: 4px; /* thickness */
   width: 100%;
-  background-color:rgba(0,0,0,0.6);/*#445552*/
+  background-color:rgba(0,0,0,1);/*#445552*/
   border-radius: 9px;
   opacity: 1;
   top: -10px;
@@ -164,7 +164,7 @@ a{
 
 #menu-stacked{
 	width:150px;
-	background:#FFFFFF;
+	background:rgba(255,255,255,0.7);
 	box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	cursor:pointer;
 	margin-top:12px;
@@ -238,6 +238,14 @@ a{
 	margin: 0px -15px 0px -15px !important;
 }
 
+.carousel_img{
+	background-position:55% 0%;
+	background-size:cover;
+	height:400px !important;	
+
+
+}
+
 #home label{ /*arrow*/
 	width: 30px;
 	top:50%;
@@ -250,9 +258,11 @@ a{
     cursor: pointer;
     border-radius:50%;
     margin:0px 5px 0px 5px;
+    padding-right:3px;
+    padding-left:3px;
 
     color: white;
-    font-size: 18pt;
+    font-size: 16pt;
 
     text-align:center;
     font-family: "Varela Round", sans-serif;
@@ -262,10 +272,7 @@ a{
 
 #home .next { right: 0; }
 
-.carousel_img{
-	height:400px !important;
-	width:100%;
-}
+
 
 #about{
 	background-color:#FFFFFF;
