@@ -31,7 +31,7 @@ a{
 
 .header-logo{
 	position:fixed;
-	right:15px;
+	right:0px;
 	top:20px;
 	padding:3px 3px;
 	width:auto;
@@ -39,14 +39,20 @@ a{
 }
 
 #logo-text{
+	display:inline-block;
+	position:fixed;
 	/* insert font*/
 	font-size:18px;
 	display:none;
-	margin:10px 30px;
+	margin:0 auto;
 	opacity:1;
 	color:#445552;
 	font-weight:bold;
-}
+	text-align:center;
+	font-weight:bold;
+	top:5%;
+	left:25%;
+}	
 
 .header-logo > img{
 	width:50px;
@@ -77,7 +83,7 @@ a{
   -o-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
   cursor: pointer;
-  top:-20px;
+  top:-15px;
   z-index:1000000000;
   left:20px;
 }
@@ -445,9 +451,14 @@ a{
 
 @media only screen and (min-width: 637px) { /* smartphone landscape */
 
+	#logo-text{
+		left:45%;
+	}
+
 	#home{
 		height:250px;
 	}
+
 	.single-item{
 		height:250px !important;
 	}
