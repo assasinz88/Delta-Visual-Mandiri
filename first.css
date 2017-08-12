@@ -238,19 +238,23 @@ a{
 	height:400px;
 	width:auto;
 	margin: 0px -15px 0px -15px !important;
+
 }
 
 .carousel_img{
 	background-position:55% 0%;
 	background-size:cover;
-	height:400px !important;	
+	height:400px !important;
+
 }
 
 .layer{
+	display:flex;
+	align-items:center;
+	justify-content: center;
 	background-color:rgba(0,0,0,0.3);
-	height:400px;
+	height:100%;
 	width:auto;
-
 }
 
 #home label{ /*arrow*/
@@ -289,12 +293,11 @@ a{
 
 
 #about{
-	padding: 30px 0px;
+	display:flex;
+	align-items: center;
+
 	border-top:3px solid #A7CECB;
 	background-color:#FFFFFF;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center;
 	height:400px;
 
 	font-size:16px;
@@ -317,14 +320,13 @@ a{
 
 .gallery-title{
 	margin-top:50px;
+
 }
 
 .gallery-carousel{
 	top:5%;
-	padding-bottom:20px;
 	height:300px;
 	width:auto !important;
-
 
 }
 
@@ -366,11 +368,19 @@ a{
 
 #product{
 	border-top:3px solid #A7CECB;
-	background-color:white;
+	background-image:url("img/gallery.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
+	background-size:cover;
 	height:auto;
+	color:white;
+}
+
+.overlay{
+
+	background-color:rgba(0,0,0,0.5);
+	
 }
 
 .product-intro{
@@ -382,8 +392,6 @@ a{
 	width:100px;
 	height:100px;
 	margin:30px auto;
-
-
 }
 
 #more{
@@ -484,5 +492,88 @@ a{
 		margin-top:25px;
 	}
 
+
+}
+
+@media only screen and (min-width: 1020px) {
+
+	#home{
+		height:auto;
+	}
+
+	.single-item{
+		height:600px !important;
+	}
+
+	.carousel_img{
+		background-position:55% 90% !important;
+		background-size:cover;
+		height:600px !important;
+	}
+
+	.layer{
+		height:100%;
+	}
+
+	.home-text{
+		font-size:70px;
+	}
+
+	#about{
+		font-size:25px;
+		height:500px;
+	}
+
+	#about h1{
+		font-size:50px !important;
+	}
+
+	#gallery{
+		height:700px;
+
+	}
+
+	.gallery-title{
+		font-size:50px;
+	}
+
+	.gallery-carousel{
+		height:500px;
+	}
+
+	.gallery-slide{
+		height:500px !important;
+	}
+
+	.gallery-title{
+		margin-top:25px;
+	}
+
+	#product{
+		height:auto;
+	}
+
+	.product-intro{
+		column-span:all !important;
+	}
+
+	.icon-container{
+		margin:100px auto;
+		-webkit-column-count: 2; 
+	    -moz-column-count: 2; 
+	    column-count: 2;
+	    padding:5px auto;
+
+
+	}
+
+	#product div{
+		font-size:24px;
+
+	}
+
+	#product h1{
+		font-size:50px;
+	}
 
 }
