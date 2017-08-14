@@ -1,427 +1,424 @@
 <!DOCTYPE html>
 <html>
-	<head>
 
-		<audio id="music" src="music/dust.mp3" autoplay="true"></audio>
+<head>
 
-		<script type="text/javascript"> 
+	<audio id="music" src="music/dust.mp3" autoplay="true"></audio>
+
+	<script type="text/javascript">
 		/* Musik dulu coyy */
-		  // lagu
-		myAudio=document.getElementById('music');
-		  myAudio.volume=0;
-		  myAudio.addEventListener('canplaythrough', function() {
-		    if(this.currentTime < 17.3){this.currentTime = 17.3;}
-		    this.play();
-		  });
-		</script>
+		// lagu
+		myAudio = document.getElementById('music');
+		myAudio.volume = 0;
+		myAudio.addEventListener('canplaythrough', function () {
+			if (this.currentTime < 17.3) {
+				this.currentTime = 17.3;
+			}
+			this.play();
+		});
+	</script>
 
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<link type="text/css" rel="stylesheet" href="first.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link type="text/css" rel="stylesheet" href="first.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-		<!-- Slick Slider -->
-		<link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
-		<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+	<!-- Slick Slider -->
+	<link rel="stylesheet" type="text/css" href="./slick/slick.css" />
+	<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
 
 
-		<script src="js/bootstrap.min.js"></script> <!-- bootstrap js -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> <!-- jquery -->
-		<script type="text/javascript" src="slick/slick.min.js"></script> <!-- slick carousel -->
-		<script src="https://use.fontawesome.com/b881a9a4a0.js"></script> <!-- font awesome -->
-		
+	<script src="js/bootstrap.min.js"></script>
+	<!-- bootstrap js -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- jquery -->
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<!-- slick carousel -->
+	<script src="https://use.fontawesome.com/b881a9a4a0.js"></script>
+	<!-- font awesome -->
 
-		<title> </title>
 
-		
-		
+	<title> </title>
 
-		
 
-		<style>
-		.borders{
-			border:1px solid black;
+
+
+
+
+	<style>
+		.borders {
+			border: 1px solid black;
 		}
-			
-		</style>
-	</head>
-	<body>
+	</style>
+</head>
 
-		<div class="container-fluid">
+<body>
 
-			<div class="row">
-			
-				<div class="col-sm-12" id="header">
+	<div class="container-fluid">
 
-					
-						<div class="header-menu " id="navbar"> <!--HAMBURGER MENU-->
+		<div class="row">
 
-							<div class="hamburger-wrapper">
-							</div>
-
-							<div class="hamburger">
+			<div class="col-sm-12" id="header">
 
 
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
+				<div class="header-menu " id="navbar">
+					<!--HAMBURGER MENU-->
+
+					<div class="hamburger-wrapper">
+					</div>
+
+					<div class="hamburger">
 
 
-							</div>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
 
-							<div class="menu-container">
 
-								<ul class="nav nav-stacked" id="menu-stacked">
+					</div>
 
-									<li role="presentation"><a class="text-center" id="home-button">Home</a></li>
-									<li role="presentation"><a class="text-center" id="about-button">About Us</a></li>
-									<li role="presentation"><a class="text-center" id="gallery-button">Gallery</a></li>
-									<li role="presentation"><a class="text-center" id="product-button">Our Product</a></li>
-									<li role="presentation"><a class="text-center" id="contact-button">Contact Us</a></li>
+					<div class="menu-container">
 
-								</ul>
+						<ul class="nav nav-stacked" id="menu-stacked">
 
-							</div>
+							<li role="presentation"><a class="text-center" id="home-button">Home</a></li>
+							<li role="presentation"><a class="text-center" id="about-button">About Us</a></li>
+							<li role="presentation"><a class="text-center" id="gallery-button">Gallery</a></li>
+							<li role="presentation"><a class="text-center" id="product-button">Our Product</a></li>
+							<li role="presentation"><a class="text-center" id="contact-button">Contact Us</a></li>
 
-						</div>
+						</ul>
 
-						<div class="header-logo"> <!--Logo-->
-							<b id="logo-text"> Delta Visual Mandiri </b>
-							<img src="img/logo1.png" alt="&#735" id="header-logo">
+					</div>
 
-						</div>
+				</div>
+
+				<div class="header-logo">
+					<!--Logo-->
+					<b id="logo-text"> Delta Visual Mandiri </b>
+					<img src="img/logo1.png" alt="&#735" id="header-logo">
 
 				</div>
 
 			</div>
 
-			<div class="row" id="home"> <!-- HOME -->
+		</div>
 
-				<div class="col-sm-12">
-					<label class="prev">&#x2039;</label>
-					<label class="next">&#x203a;</label>
+		<div class="row" id="home">
+			<!-- HOME -->
 
-					<div class="single-item">
-						<div class="carousel_img" style="background-image:url('img/slideshow/1.jpg');">
-							<div class="layer">
-								<div class="home-text">
+			<div class="col-sm-12">
+				<label class="prev">&#x2039;</label>
+				<label class="next">&#x203a;</label>
+
+				<div class="single-item">
+					<div class="carousel_img" style="background-image:url('img/slideshow/1.jpg');">
+						<div class="layer" style="display: flex; align-items: center; justify-content: center">
+							<div class="home-text">
 								DJSAKDJSALJDSLKSAJDLKSAJLASJSKL
-								</div>
 							</div>
-							
-
-							
-
 						</div>
-						<div class="carousel_img" style="background-image:url('img/slideshow/2.jpg');">
-							
-							<div class="layer"></div>
 
 
-							<p class="text-center home-text">
-									TEST 1
-							</p>
-							<p class="text-center home-text">
-									TEST 2
-							</p>
 
-						</div>
-						<div class="carousel_img" style="background-image:url('img/slideshow/1.jpg');">
-							
-							<div class="layer"></div>
-
-							<p class="text-center home-text">
-									TEST 1
-							</p>
-							<p class="text-center home-text">
-									TEST 2
-							</p>
-
-						</div>
 
 					</div>
+					<div class="carousel_img" style="background-image:url('img/slideshow/2.jpg');">
+
+						<div class="layer"></div>
+
+
+						<p class="text-center home-text">
+							TEST 1
+						</p>
+						<p class="text-center home-text">
+							TEST 2
+						</p>
+
+					</div>
+					<div class="carousel_img" style="background-image:url('img/slideshow/1.jpg');">
+
+						<div class="layer"></div>
+
+						<p class="text-center home-text">
+							TEST 1
+						</p>
+						<p class="text-center home-text">
+							TEST 2
+						</p>
+
 					</div>
 
-			</div>
-
-			<div class="row" id="about"> <!-- About us -->
-				<div class="col-sm-12">
-					<h1 class="about-title text-center"> “Kepuasan Anda Kebanggaan Kami” </h1><br><br>
-					<p class="about-subtitle small text-center">Kami adalah perusahaan yang bergerak dibidang perdagangan dan jasa, yang berdomisili kota Ponatianak. <br><br>Kami telah memiliki pengalaman yang cukup banyak dalam bidangnya, hal ini didukung oleh tenaga kerja yang handal yang akan selalu siap memberikan yang terbaik kepada client kami.</p>
 				</div>
 			</div>
 
-			<div class="row" id="gallery"> <!-- Gallery -->
+		</div>
+
+		<div class="row" id="about">
+			<!-- About us -->
+			<div class="col-sm-12">
+				<h1 class="about-title text-center"> “Kepuasan Anda Kebanggaan Kami” </h1><br><br>
+				<p class="about-subtitle small text-center">Kami adalah perusahaan yang bergerak dibidang perdagangan dan jasa, yang berdomisili kota Ponatianak. <br><br>Kami telah
+					memiliki pengalaman yang cukup banyak dalam bidangnya, hal ini didukung oleh tenaga kerja yang handal yang akan selalu
+					siap memberikan yang terbaik kepada client kami.</p>
+			</div>
+		</div>
+
+		<div class="row" id="gallery">
+			<!-- Gallery -->
 
 			<h1 class="gallery-title text-center" style="font-weight:bold;"> <span style="color:#A7CECB;">Kualitas </span>, <span style="color:#CACC90;">Estetika </span> dan <span style="color:#75704E;">Kerapian</span></h1>
 
-				<div class="gallery-carousel">
-						
-						<div class="gallery-slide" style="background-image:url('img/gallery-carousel/1.jpg');"> 
+			<div class="gallery-carousel">
 
-							<p class="gallery-caption">
-								ini no 1
-							</p>	
+				<div class="gallery-slide" style="background-image:url('img/gallery-carousel/1.jpg');">
 
-						</div>
+					<p class="gallery-caption">
+						ini no 1
+					</p>
 
-						<div class="gallery-slide" style="background-image:url('img/gallery-carousel/2.jpg');">
+				</div>
 
-							<p class="gallery-caption">
-								ini no 2
-							</p>
-								
-						</div>
+				<div class="gallery-slide" style="background-image:url('img/gallery-carousel/2.jpg');">
 
-						<div class="gallery-slide" style="background-image:url('img/gallery-carousel/3.jpg');">	
+					<p class="gallery-caption">
+						ini no 2
+					</p>
 
-							<p class="gallery-caption">
-								ini no 3
-							</p>
+				</div>
 
-						</div>
+				<div class="gallery-slide" style="background-image:url('img/gallery-carousel/3.jpg');">
 
-						<div class="gallery-slide" style="background-image:url('img/gallery-carousel/4.jpg');">		
+					<p class="gallery-caption">
+						ini no 3
+					</p>
 
-							<p class="gallery-caption">
-								ini no 4
-							</p>
+				</div>
 
-						</div>
+				<div class="gallery-slide" style="background-image:url('img/gallery-carousel/4.jpg');">
 
-						<div class="gallery-slide" style="background-image:url('img/gallery-carousel/5.jpg');">	
+					<p class="gallery-caption">
+						ini no 4
+					</p>
 
-							<p class="gallery-caption">
-								ini no 5
-							</p>
+				</div>
 
-						</div>
+				<div class="gallery-slide" style="background-image:url('img/gallery-carousel/5.jpg');">
+
+					<p class="gallery-caption">
+						ini no 5
+					</p>
 
 				</div>
 
 			</div>
 
-			<div class="row" id="product"> <!-- Our Product -->
-				<div class="col-sm-12">
-						<div class="product-intro">
-							<h1 style="color:#8BA6A9;font-weight:bold;">
-								Produk Kami
-							</h1>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-							</p>
-						</div>
+		</div>
 
-						<div>
-							<img class="icon" src="img/print.png">
-							<p class="text-center">
-								<b style="font-size:18px;">Digital Printing & Percetakan</b><br><br>
-								Baleho, Spandul, Umbul-umbul, Sticker, Brosur, Flyer, Kartu Nama, dll
-							</p>
-						</div>
-
-						<div>
-							<img class="icon" src="img/jasa.png">
-							<p class="text-center">
-								<b style="font-size:18px;">Biro Jasa & Reklame</b><br><br>
-								Menyediakan titik reklame dan biro jasa
-							</p>
-						</div>
-
-						<div>
-							<img class="icon" src="img/store.png">
-							<p class="text-center">
-								<b style="font-size:18px;">Pembuatan Neon Box, Shop Sign & Street Sign</b><br><br>
-								
-							</p>
-						</div>
-						<div>
-							<img class="icon" src="img/sticker.png">
-							<p class="text-center">
-								<b style="font-size:18px;">Sticker Car Service & One Way Vision</b><br><br>
-								
-							</p>
-						</div>
-
-
+		<div class="row" id="product">
+			<!-- Our Product -->
+			<div class="col-sm-12">
+				<div class="product-intro">
+					<h1 style="color:#8BA6A9;font-weight:bold;">
+						Produk Kami
+					</h1>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+						irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+						cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
 				</div>
-			</div>
 
-			<div class="row links">
+				<div>
+					<img class="icon" src="img/print.png">
+					<p class="text-center">
+						<b style="font-size:18px;">Digital Printing & Percetakan</b><br><br> Baleho, Spandul, Umbul-umbul, Sticker, Brosur,
+						Flyer, Kartu Nama, dll
+					</p>
+				</div>
+
+				<div>
+					<img class="icon" src="img/jasa.png">
+					<p class="text-center">
+						<b style="font-size:18px;">Biro Jasa & Reklame</b><br><br> Menyediakan titik reklame dan biro jasa
+					</p>
+				</div>
+
+				<div>
+					<img class="icon" src="img/store.png">
+					<p class="text-center">
+						<b style="font-size:18px;">Pembuatan Neon Box, Shop Sign & Street Sign</b><br><br>
+
+					</p>
+				</div>
+				<div>
+					<img class="icon" src="img/sticker.png">
+					<p class="text-center">
+						<b style="font-size:18px;">Sticker Car Service & One Way Vision</b><br><br>
+
+					</p>
+				</div>
+
+
+			</div>
+		</div>
+
+		<div class="row links">
 
 			<div class="col-sm-4" style="background-image:url(img/links/1.jpg"></div>
 			<div class="col-sm-4" style="background-image:url(img/links/2.jpg"></div>
 			<div class="col-sm-4" style="background-image:url(img/links/3.jpg"></div>
 
+		</div>
+
+		<div class="row" id="more">
+			<!-- Learn More -->
+
+			<div class="col-sm-3">
+
 			</div>
 
-			<div class="row" id="more"> <!-- Learn More -->
+			<div class="col-sm-6">
 
-				<div class="col-sm-3">
+				<div class="text-center send-email">
 
-				</div>
-
-				<div class="col-sm-6">
-
-					<div class="text-center send-email">
-
-						<div class="form-group">
+					<div class="form-group">
 
 						<input type="email" class="form-control" placeholder="Email Address">
-
-						</div>
 
 					</div>
 
 				</div>
 
-				<div class="col-sm-3">
-					<button type="button" class="btn btn-primary"> Email us! </button>
-				</div>
-
 			</div>
 
-			<div class="row" id="footer">
-				<div class="col-sm-12">
-					<p class="contact-subtitle small text-center" style="color:white;font-size:12px">
-						<a href="#"><i class="fa fa-instagram text-center" aria-hidden="true"></i></a>
-						<a href="#"><i class="fa fa-facebook text-center" aria-hidden="true"></i></a>
-						<br>
-
-						PT Delta Visual Mandiri
-						<br><br>
-						Sentra Bisnis Ayani Megamall AA - 19 Pontianak Telp/Fax (0561) 766228
-						CP. 0812 1019 1989 - 0821 4815 1989 
-						<br>
-						email: 
-
-						<br><br>
-						<span style="color:white;font-size:8px;text-align:right !important;">© proudly design by : mailman - logbaseE</span>
-
-
-					</p>
-
+			<div class="col-sm-3">
+				<button type="button" class="btn btn-primary"> Email us! </button>
 			</div>
 
-			</div>
 		</div>
+
+		<div class="row" id="footer">
+			<div class="col-sm-12">
+				<p class="contact-subtitle small text-center" style="color:white;font-size:12px">
+					<a href="#"><i class="fa fa-instagram text-center" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-facebook text-center" aria-hidden="true"></i></a>
+					<br> PT Delta Visual Mandiri
+					<br><br> Sentra Bisnis Ayani Megamall AA - 19 Pontianak Telp/Fax (0561) 766228 CP. 0812 1019 1989 - 0821 4815 1989
+					<br> email:
+
+					<br><br>
+					<span style="color:white;font-size:8px;text-align:right !important;">© proudly design by : mailman - logbaseE</span>
+
+
+				</p>
+
+			</div>
+
+		</div>
+	</div>
 	<script type="text/javascript">
-		$(document).ready(function()
-		{
+		$(document).ready(function () {
 			$(".menu-container").hide();
 			$("#logo-text").fadeIn(1000);
 			$("#header-logo").fadeIn(1000);
 
-			$('.hamburger').click(function()
-			{
-					$(this).toggleClass('open');
-					$(".menu-container").slideToggle(300);
+			$('.hamburger').click(function () {
+				$(this).toggleClass('open');
+				$(".menu-container").slideToggle(300);
 			});
 
 		});
 
 		$(".single-item").slick({
-			dots:false,
-			mobileFirst:true,
-			arrows:true,
-			autoplay:false,
-			autoplaySpeed:3000,
-			prevArrow:$(".prev"),
-			nextArrow:$(".next")
-        });
-
-		 $('.gallery-carousel').slick({
-			  centerMode: true,
-			  centerPadding: '60px',
-			  slidesToShow: 3,
-			  dots:true,
-			  arrows:false,
-			  responsive: [
-			    {
-			      breakpoint: 1020,
-			      settings: {
-			        arrows: false,
-			        centerMode: true,
-			        centerPadding: '20px',
-			        slidesToShow: 3
-			      }
-			    },
-			    {
-			      breakpoint: 359,
-			      settings: {
-			        arrows: false,
-			        centerMode: true,
-			        centerPadding: '10px',
-			        slidesToShow: 1
-			      }
-			    },
-			    {
-			      breakpoint: 637,
-			      settings: {
-			        arrows: false,
-			        centerMode: true,
-			        centerPadding: '10px',
-			        slidesToShow: 1
-			      }
-			    }
-			  ]
-			});
-
-		$(window).scroll(function() /*Fade In Logo teks */
-		{
-		    $("#logo-text").css("opacity", 1 - $(window).scrollTop()/90);
+			dots: false,
+			mobileFirst: true,
+			arrows: true,
+			autoplay: false,
+			autoplaySpeed: 3000,
+			prevArrow: $(".prev"),
+			nextArrow: $(".next")
 		});
 
-		$(window).scroll(function() /*Fade In Logo */
-		{
-		    $("#header-logo").css("opacity", 1 - $(window).scrollTop()/90);
+		$('.gallery-carousel').slick({
+			centerMode: true,
+			centerPadding: '60px',
+			slidesToShow: 3,
+			dots: true,
+			arrows: false,
+			responsive: [{
+					breakpoint: 1020,
+					settings: {
+						arrows: false,
+						centerMode: true,
+						centerPadding: '20px',
+						slidesToShow: 3
+					}
+				},
+				{
+					breakpoint: 359,
+					settings: {
+						arrows: false,
+						centerMode: true,
+						centerPadding: '10px',
+						slidesToShow: 1
+					}
+				},
+				{
+					breakpoint: 637,
+					settings: {
+						arrows: false,
+						centerMode: true,
+						centerPadding: '10px',
+						slidesToShow: 1
+					}
+				}
+			]
+		});
+
+		$(window).scroll(function () /*Fade In Logo teks */ {
+			$("#logo-text").css("opacity", 1 - $(window).scrollTop() / 90);
+		});
+
+		$(window).scroll(function () /*Fade In Logo */ {
+			$("#header-logo").css("opacity", 1 - $(window).scrollTop() / 90);
 		});
 
 		/* navigation scroll animation */
-		$("#home-button").click(function()
-		{
-			$("body,html").animate(
-			{
+		$("#home-button").click(function () {
+			$("body,html").animate({
 				scrollTop: $("#home").offset().top
-			},1000);
+			}, 1000);
 		});
 
-		$("#about-button").click(function()
-		{
-			$("body,html").animate(
-			{
+		$("#about-button").click(function () {
+			$("body,html").animate({
 				scrollTop: $("#about").offset().top
-			},1000);
+			}, 1000);
 		});
 
-		$("#gallery-button").click(function()
-		{
-			$("body,html").animate(
-			{
+		$("#gallery-button").click(function () {
+			$("body,html").animate({
 				scrollTop: $("#gallery").offset().top
-			},1000);
+			}, 1000);
 		});
 
-		$("#product-button").click(function()
-		{
-			$("body,html").animate(
-			{
+		$("#product-button").click(function () {
+			$("body,html").animate({
 				scrollTop: $("#product").offset().top
-			},1000);
+			}, 1000);
 		});
 
-		$("#contact-button").click(function()
-		{
-			$("body,html").animate(
-			{
+		$("#contact-button").click(function () {
+			$("body,html").animate({
 				scrollTop: $("#more").offset().top
-			},1000);
+			}, 1000);
 		});
-
-
 	</script>
-	
-	</body>
+
+</body>
+
 </html>
