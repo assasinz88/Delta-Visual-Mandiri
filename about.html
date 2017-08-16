@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    
+
+
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Libre+Baskerville:400i|Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    
+
 
     <!-- Slick Slider -->
     <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
@@ -70,9 +70,9 @@
                     </p>
                 </div>
             </div>
-            <d class="slide" style="color: white;">
+            <div class="slide" style="color: white;">
                 <h1>MISI</h1>
-                <o class="slide-content">
+                <div class="slide-content">
                     <p>
                         <ol>
                             <li>Memberikan nilai lebih dalam setiap layanan</li>
@@ -81,6 +81,8 @@
                         </ol>
 
                     </p>
+                </div>
+            </div>
         </div>
     </div>
     <div id="clients">
@@ -101,31 +103,36 @@
         </div>
     </div>
     <style>
-        .footer{
+        .footer {
             width: 100%;
             display: grid;
             grid-template-columns: 1fr 1fr 2fr;
             grid-template-rows: 1fr 1fr;
-            grid-template-areas:
-            "nav form connect" 
+            grid-template-areas: 
+            "nav connect form"
             "copyright copyright copyright";
         }
-        .footer-content{
+
+        .footer-content {
             height: 100px;
         }
-        .footer-nav{
+
+        .footer-nav {
             background: red;
             grid-area: nav;
         }
-        .footer-form{
+
+        .footer-form {
             background: blue;
             grid-area: form;
         }
-        .footer-connect{
+
+        .footer-connect {
             background: cyan;
             grid-area: connect;
         }
-        .footer-copyright{
+
+        .footer-copyright {
             background: green;
             grid-area: copyright;
         }

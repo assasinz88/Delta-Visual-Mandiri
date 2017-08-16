@@ -231,6 +231,7 @@ a {
     height: 400px;
 }
 
+<<<<<<< HEAD
 .single-item {
     height: 400px;
     width: auto;
@@ -247,6 +248,29 @@ a {
     background-color: rgba(0, 0, 0, 0.3);
     height: 400px;
     width: auto;
+=======
+.single-item{
+	height:400px;
+	width:auto;
+	margin: 0px -15px 0px -15px !important;
+
+}
+
+.carousel_img{
+	background-position:55% 0%;
+	background-size:cover;
+	height:400px !important;
+
+}
+
+.layer{
+	display:flex;
+	align-items:center;
+	justify-content: center;
+	background-color:rgba(0,0,0,0.3);
+	height:100%;
+	width:auto;
+>>>>>>> refs/remotes/origin/master
 }
 
 #home label {
@@ -276,10 +300,23 @@ a {
     right: 0;
 }
 
+<<<<<<< HEAD
 .home-text {
     text-align: center;
     color: white;
     font-size: 36px;
+=======
+
+#about{
+	display:flex;
+	align-items: center;
+
+	border-top:3px solid #A7CECB;
+	background-color:#FFFFFF;
+	height:400px;
+
+	font-size:16px;
+>>>>>>> refs/remotes/origin/master
 }
 
 #about {
@@ -298,6 +335,7 @@ a {
     font-weight: bold;
 }
 
+<<<<<<< HEAD
 #gallery {
     border-top: 3px solid #A7CECB;
     background-color: #F4EBBE;
@@ -310,6 +348,18 @@ a {
 
 .gallery-title {
     margin-top: 50px;
+=======
+.gallery-title{
+	margin-top:50px;
+
+}
+
+.gallery-carousel{
+	top:5%;
+	height:300px;
+	width:auto !important;
+
+>>>>>>> refs/remotes/origin/master
 }
 
 .gallery-carousel {
@@ -331,6 +381,7 @@ a {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+<<<<<<< HEAD
 .gallery-caption {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
@@ -344,6 +395,26 @@ a {
     -moz-transition: all .5s ease-out;
     -o-transition: all .5s ease-out;
     transition: all .5s ease-out;
+=======
+
+
+
+#product{
+	border-top:3px solid #A7CECB;
+	background-image:url("img/gallery.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size:cover;
+	height:auto;
+	color:white;
+}
+
+.overlay{
+
+	background-color:rgba(0,0,0,0.5);
+	
+>>>>>>> refs/remotes/origin/master
 }
 
 #product {
@@ -355,6 +426,7 @@ a {
     height: auto;
 }
 
+<<<<<<< HEAD
 .product-intro {
     text-align: center;
 }
@@ -364,6 +436,13 @@ a {
     width: 100px;
     height: 100px;
     margin: 30px auto;
+=======
+.icon{
+	display:block;
+	width:100px;
+	height:100px;
+	margin:30px auto;
+>>>>>>> refs/remotes/origin/master
 }
 
 #more {
@@ -388,6 +467,7 @@ a {
 	width:70px;
 	height:70px;
 	padding-top:10px;
+<<<<<<< HEAD
 	border-radius:50%;*/
     /*for desktop*/
     font-size: 30px;
@@ -452,4 +532,171 @@ a {
     .gallery-title {
         margin-top: 25px;
     }
+=======
+	border-radius:50%;*/  /*for desktop*/
+	font-size:30px;
+	margin:20px;
+	width:40px;
+	height:40px;
+	border-radius:50%;
+	padding-top:5px;
+
+	-webkit-transition: all .5s ease-out;
+	-moz-transition: all .5s ease-out;
+	-o-transition: all .5s ease-out;
+	transition: all .5s ease-out;
+
+}
+
+.fa:hover{
+	
+	color:white;
+	background-color:#3C4859;
+
+	-webkit-transition: all .5s ease-out;
+	-moz-transition: all .5s ease-out;
+	-o-transition: all .5s ease-out;
+	transition: all .5s ease-out;
+}
+
+@media only screen and (max-width: 357px) { /* lesser than smartphone size */
+	.container-fluid{
+		width:357px;
+	}
+
+	#home, #about {
+		background-attachment:initial;
+	}
+
+	.header-logo{
+		position:absolute;
+	}
+}
+
+@media only screen and (min-width: 637px) { /* smartphone landscape */
+
+
+	#home{
+		height:250px;
+	}
+
+	.single-item{
+		height:250px !important;
+	}
+
+	.carousel_img{
+		background-position:55% 90% !important;
+		background-size:cover;
+		height:250px !important;
+	}
+
+	.layer{
+		height:250px;
+	}
+
+	#about{
+		height:250px;
+	}
+
+	#gallery{
+		height:300px;
+	}
+
+	.gallery-carousel{
+		height:150px;
+	}
+
+	.gallery-slide{
+		height:150px !important;
+	}
+
+	.gallery-title{
+		margin-top:25px;
+	}
+
+
+}
+
+@media only screen and (min-width: 1020px) {
+
+	#home{
+		height:auto;
+	}
+
+	.single-item{
+		height:600px !important;
+	}
+
+	.carousel_img{
+		background-position:55% 90% !important;
+		background-size:cover;
+		height:600px !important;
+	}
+
+	.layer{
+		height:100%;
+	}
+
+	.home-text{
+		font-size:70px;
+	}
+
+	#about{
+		font-size:25px;
+		height:500px;
+	}
+
+	#about h1{
+		font-size:50px !important;
+	}
+
+	#gallery{
+		height:700px;
+
+	}
+
+	.gallery-title{
+		font-size:50px;
+	}
+
+	.gallery-carousel{
+		height:500px;
+	}
+
+	.gallery-slide{
+		height:500px !important;
+	}
+
+	.gallery-title{
+		margin-top:25px;
+	}
+
+	#product{
+		height:auto;
+	}
+
+	.product-intro{
+		column-span:all !important;
+	}
+
+	.icon-container{
+		margin:100px auto;
+		-webkit-column-count: 2; 
+	    -moz-column-count: 2; 
+	    column-count: 2;
+	    padding:5px auto;
+
+
+	}
+
+	#product div{
+		font-size:24px;
+
+	}
+
+	#product h1{
+		font-size:50px;
+	}
+
+>>>>>>> refs/remotes/origin/master
 }

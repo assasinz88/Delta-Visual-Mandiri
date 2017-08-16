@@ -34,12 +34,14 @@ p {
     padding: 50px;
     color: white;
     background: #222;
+    box-sizing: border-box;
+    border-left: solid 10px #FF5722;
 }
 
 #vis-mis {
     height: 500px;
     position: relative;
-    overflow: hidden;
+    overflow: hidden; 
 }
 
 .fa {
