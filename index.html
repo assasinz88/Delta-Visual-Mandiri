@@ -44,7 +44,7 @@
 			position: fixed;
 			top: 50%;
 			transform: translateY(-50%);
-			z-index: 100000000;
+			z-index: 100;
 			transition: left ease-in-out .5s;
 			/* left: 0; */
 		}
@@ -53,6 +53,7 @@
 			padding: 20px 0;
 			background-color: white;
 			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+			z-index: 1000;
 		}
 
 		.menu ul {
@@ -65,6 +66,7 @@
 			padding: 10px 25px;
 			padding-right: 50px;
 			position: relative;
+			cursor: pointer;
 		}
 
 		.nav-overlay {
@@ -93,7 +95,7 @@
 		}
 
 		.menu li:hover .nav-overlay {
-			animation: wipe 1s;
+			animation: wipe 0.5s;
 		}
 
 		.arrow {
@@ -102,27 +104,92 @@
 			width: auto;
 			color: white;
 			padding: 30px 15px;
+			cursor: pointer;
+			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 		}
-		.arrow i{
+
+		.arrow i {
 			transition: transform ease-in-out .5s;
 		}
 
-		.about{
-			
-			text-align:center;
-			justify-content:center;
-			background-color:#263238;
+		.about {
+
+			text-align: center;
+			justify-content: center;
+			background-color: #1a2126;
 			height: auto;
-			padding:50px;
-			color:white;
-
-		}
-		.about h1{
-			margin:0;
+			padding: 50px;
+			color: white;
+			border-right: 8px solid #F57C00;
 		}
 
-		.about p{
-			margin:20px 0px 0px 0px;
+		.about h1 {
+			margin: 0;
+		}
+
+		.about p {
+			margin: 20px 0px 0px 0px;
+		}
+
+		.product {
+			position: relative;
+			color: white;
+			text-align: center;
+			background: url("img/slideshow/1.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+
+			height: auto;
+			padding: 50px;
+		}
+
+		.product-intro {
+			z-index: 15;
+			position: relative;
+		}
+
+		.product-intro h1{
+			font-size:75px;
+			margin-bottom:50px;
+		}
+
+		.product-intro p{
+			font-size:18px;
+			margin-bottom:50px;
+		}
+
+		.product-list {
+			display: grid;
+			position: relative;
+			z-index: 15;
+			grid-template-rows: 1fr 1fr;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+			grid-template-areas: ". satu satu dua dua ." "tiga tiga empat empat lima lima";
+		}
+
+		.icon {
+			margin: 50px;
+		}
+
+		.icon img {
+			height: 100px;
+			width: 100px;
+		}
+
+		.icon p {
+			font-size:20px;
+			margin: 25px;
+		}
+
+		.filter {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 0, 0, 0.4);
+			z-index: 9;
 		}
 	</style>
 	<div class="header aaa">
@@ -144,18 +211,67 @@
 		<div id="network"></div>
 		<div class="overlay home" style="display: flex;align-items: center;justify-content: center;flex-direction: column;">
 			<h1 class="quote motto" style="text-align:center">Delta Visual Mandiri</h1>
-			<h3 class="motto quote">"Kepercayaan Anda Kebanggaan Kami"</h3>
+			<h3 class="motto quote" style="font-style:italic">"Kepercayaan Anda Kebanggaan Kami"</h3>
 		</div>
 
-		
+
 	</div>
 	<script type="text/javascript" src="js/particle-network.min.js"></script>
 
 	<div class="about">
+		<div>
 			<h1>"Kepercayaan Anda Kebanggaan Kami"</h1>
-			<p>Kami adalah perusahaan yang bergerak dibidang perdagangan dan jasa, yang berdomisili kota Pontianak. Kami telah memiliki pengalaman yaang cukup banyak dalam bidangnya, hal ini didukung oleh tenaga kerja yang handal yang akan selalu siap memberikan yang terbaik kepada client kami</p>
+			<p style="font-size:18px;">Kami adalah perusahaan yang bergerak dibidang perdagangan dan jasa, yang berdomisili kota Pontianak. Kami telah memiliki
+				pengalaman yaang cukup banyak dalam bidangnya, hal ini didukung oleh tenaga kerja yang handal yang akan selalu siap memberikan
+				yang terbaik kepada client kami</p>
+		</div>
 	</div>
 
+	<div class="product">
+		<div class="filter"></div>
+		<div class="product-intro">
+			<h1>PRODUK KAMI</h1>
+			<p class="container">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec lacinia lectus. Quisque tristique, leo sollicitudin
+				egestas venenatis, lacus orci commodo neque, vitae porttitor nisl est sit amet lacus. In sodales lacus nec ex luctus,
+				sit amet sodales massa convallis. Quisque ullamcorper orci sed purus vulputate condimentum sit amet quis quam. Nullam
+				posuere vitae arcu at ultrices. Pellentesque tristique purus et sollicitudin imperdiet. Maecenas egestas urna semper
+				magna dictum commodo. Etiam laoreet odio elit, finibus eleifend elit ultricies quis. Vivamus sapien nisi, aliquam quis
+				efficitur quis, vestibulum eget lectus. Proin euismod, odio ut rhoncus pretium, lectus lacus aliquam odio, vel imperdiet
+				velit erat vel quam.
+			</p>
+		</div>
+
+		<div class="product-list">
+
+			<div class=" icon" style="grid-area: satu">
+				<img src="img/print.png">
+				<p>Digital Printing</p>
+			</div>
+
+			<div class=" icon" style="grid-area: dua">
+				<img src="img/poster.png">
+				<p>Percetakan</p>
+			</div>
+
+			<div class=" icon" style="grid-area:tiga">
+				<img src="img/store.png">
+				<p>Pembuatan Neon Box, Shop Sign dan Street Sign</p>
+			</div>
+
+			<div class=" icon" style="grid-area:empat">
+				<img src="img/jasa.png">
+				<p>Biro Jasa dan Menyediakan titik Reklame</p>
+			</div>
+			<div class=" icon" style="grid-area:lima">
+				<img src="img/sticker.png">
+				<p>Sticker Car Service dan One Way Vision</p>
+			</div>
+
+
+		</div>
+
+	</div>
 
 
 	<link rel="stylesheet" type="text/css" href="footer.css">
@@ -248,7 +364,7 @@
 					$(".header").css('left', -$('.menu').width() + 'px');
 					$(".arrow i").css('transform', 'rotate(0deg)');
 					$('.header').addClass("aaa");
-					
+
 				} else {
 					$(".header").css('left', '0');
 					$('.header').removeClass("aaa");
@@ -256,20 +372,16 @@
 				}
 			});
 
-			$(".home-button").click(function()
-			{
-				$("body,html").animate(
-				{
+			$(".home-button").click(function () {
+				$("body,html").animate({
 					scrollTop: $(".home").offset().top
-				},1000);
+				}, 1000);
 			});
 
-			$(".about-button").click(function()
-			{
-				$("body,html").animate(
-				{
+			$(".about-button").click(function () {
+				$("body,html").animate({
 					scrollTop: $(".about").offset().top
-				},1000);
+				}, 1000);
 			});
 		});
 	</script>
