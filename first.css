@@ -1,12 +1,12 @@
-@font-face{
-	font-family: SuperGroteskA;
-	src: url(fonts/supergroteska-rg.ttf);
+
+h1,
+h1 *,
+.quote {
+    font-family: 'Libre Baskerville', serif;
 }
 
-*{
-	font-family: SuperGroteskA;
-
-	
+* {
+    font-family: 'Montserrat', serif;
 }
 
 /* Smartphone Size */
@@ -78,7 +78,7 @@ a{
   cursor: pointer;
   top:-20px;
   z-index:1000000000;
-  left:20px;
+  left:30px;
 }
 
 .hamburger-wrapper{
@@ -87,7 +87,7 @@ a{
 	border-radius:10%;
 	position:absolute;
 	margin:20px auto;
-	left:10px;
+	left:20px;
 	z-index:100000000;
 	/*box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);*/
 
@@ -306,6 +306,7 @@ a{
 .about-title{
 	color:#8BA6A9;
 	font-weight:bold;
+	margin-bottom:50px;
 }
 
 #gallery{
@@ -375,12 +376,15 @@ a{
 	background-size:cover;
 	height:auto;
 	color:white;
+	position:relative;
 }
 
 .overlay{
-
+	height:100%;
+	position:absolute;
+	width:100%;
 	background-color:rgba(0,0,0,0.5);
-	
+
 }
 
 .product-intro{
@@ -563,13 +567,10 @@ a{
 	}
 
 	.icon-container{
-		margin:100px auto;
-		-webkit-column-count: 2; 
-	    -moz-column-count: 2; 
-	    column-count: 2;
-	    padding:5px auto;
-
-
+		width:100%;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
 	}
 
 	#product div{
