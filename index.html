@@ -118,7 +118,7 @@
 			justify-content: center;
 			background-color: #1a2126;
 			height: auto;
-			padding: 50px;
+			padding: 100px 50px;
 			color: white;
 			border-right: 8px solid #F57C00;
 		}
@@ -138,10 +138,10 @@
 			background: url("img/slideshow/1.jpg");
 			background-size: cover;
 			background-repeat: no-repeat;
-			background-position: center;
+			background-position: center bottom;
 
 			height: auto;
-			padding: 50px;
+			padding: 100px 50px;
 		}
 
 		.product-intro {
@@ -150,26 +150,21 @@
 		}
 
 		.product-intro h1{
-			font-size:75px;
-			margin-bottom:50px;
-		}
-
-		.product-intro p{
-			font-size:18px;
-			margin-bottom:50px;
+			font-size:45px;
+			margin-bottom:100px;
 		}
 
 		.product-list {
 			display: grid;
 			position: relative;
 			z-index: 15;
-			grid-template-rows: 1fr 1fr;
-			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-			grid-template-areas: ". satu satu dua dua ." "tiga tiga empat empat lima lima";
+			grid-template-rows: 1fr;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+			grid-template-areas: "satu dua tiga empat lima";
 		}
 
 		.icon {
-			margin: 50px;
+			margin: 0px 20px 20px 20px;
 		}
 
 		.icon img {
@@ -178,8 +173,8 @@
 		}
 
 		.icon p {
-			font-size:20px;
-			margin: 25px;
+			font-size:16px;
+			margin-top: 25px;
 		}
 
 		.filter {
@@ -230,16 +225,7 @@
 	<div class="product">
 		<div class="filter"></div>
 		<div class="product-intro">
-			<h1>PRODUK KAMI</h1>
-			<p class="container">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec lacinia lectus. Quisque tristique, leo sollicitudin
-				egestas venenatis, lacus orci commodo neque, vitae porttitor nisl est sit amet lacus. In sodales lacus nec ex luctus,
-				sit amet sodales massa convallis. Quisque ullamcorper orci sed purus vulputate condimentum sit amet quis quam. Nullam
-				posuere vitae arcu at ultrices. Pellentesque tristique purus et sollicitudin imperdiet. Maecenas egestas urna semper
-				magna dictum commodo. Etiam laoreet odio elit, finibus eleifend elit ultricies quis. Vivamus sapien nisi, aliquam quis
-				efficitur quis, vestibulum eget lectus. Proin euismod, odio ut rhoncus pretium, lectus lacus aliquam odio, vel imperdiet
-				velit erat vel quam.
-			</p>
+			<h1>Produk-produk Kami</h1>
 		</div>
 
 		<div class="product-list">
