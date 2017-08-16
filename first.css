@@ -424,6 +424,11 @@ a{
 	border-radius:50%;
 	padding-top:5px;
 
+	-webkit-transition: all .5s ease-out;
+	-moz-transition: all .5s ease-out;
+	-o-transition: all .5s ease-out;
+	transition: all .5s ease-out;
+
 }
 
 .fa:hover{
