@@ -4,7 +4,7 @@ h1 *,
     font-family: 'Libre Baskerville', serif;
 }
 
-p {
+* {
     font-family: 'Montserrat', serif;
 }
 
@@ -35,7 +35,7 @@ p {
     color: white;
     background: #222;
     box-sizing: border-box;
-    border-left: solid 10px #FF5722;
+    border-left: solid 10px #F57C00;
 }
 
 #vis-mis {
