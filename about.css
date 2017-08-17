@@ -8,7 +8,7 @@ h1 *,
     font-family: 'Montserrat', serif;
 }
 
-#top {
+/* #top {
     height: 100vh;
     position: relative;
     overflow: hidden;
@@ -19,7 +19,7 @@ h1 *,
     height: 100%;
     width: 100%;
     position: absolute;
-}
+} */
 
 .overlay {
     position: absolute;
@@ -31,11 +31,19 @@ h1 *,
 }
 
 #overview {
-    padding: 50px;
     color: white;
     background: #222;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
     border-left: solid 10px #F57C00;
+    justify-content: center;
+    height: 350px;
+    padding: 50px;
+}
+
+#overview p{
+    font-size: 18px;
 }
 
 #vis-mis {
@@ -104,7 +112,7 @@ ol {
 }
 
 #clients {
-    padding: 20px;
+    padding: 50px 20px;
 }
 
 .items {
@@ -121,12 +129,13 @@ ol {
     height: auto;
     margin: 20px;
     padding: 10px 20px;
-    background: #607D8B;
+    background: #222;
     color: white;
     font-family: 'Montserrat', sans-serif;
     transition: all 0.5s ease-in-out;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     cursor: default;
+    text-align:center;
 }
 
 .item:hover {
@@ -134,3 +143,74 @@ ol {
     color: white;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    #overview{
+        height: auto;
+        padding: 50px 20px;
+    }
+    #overview container{
+        margin: 0;
+        padding: 0;
+    }
+    #vis-mis{
+        height: 100vh;
+    }
+    .slide{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    .slide h1{
+        margin-bottom: 20px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    #overview{
+        height: auto;
+        border: none;
+        border-top: solid 10px #F57C00;
+        text-align: justify;
+    }
+    #overview container{
+        padding: 0;
+    }
+    #overview p{
+        font-size: 15px;
+    }
+    #vis-mis p, #vis-mis li{
+        font-size: 15px;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+    .slide{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* height: 800px; */
+        padding: 10px;
+    }
+    #overview p{
+        font-size: 14px;
+    }
+    #vis-mis h1{
+        font-size: 50px;
+    }
+    #vis-mis p, #vis-mis li{
+        text-align: left;
+    }
+    .item{
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+}    

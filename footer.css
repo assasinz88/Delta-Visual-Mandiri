@@ -27,6 +27,7 @@
 
 .footer-form form {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .footer-form form input {
@@ -71,3 +72,30 @@
 .footer-nav a {
     text-decoration: none;
 }
+
+@media only screen and (max-width : 768px) {
+    .footer-top {
+        /* width: 100%; */
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr auto;
+        grid-template-areas: "nav details connect" "form form form";
+        padding: 50px;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+    .footer-top {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: "nav" "details" "connect" "form";
+        padding: 50px;
+    }
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+    .footer-top {
+        padding: 25px;
+    }
+}    
