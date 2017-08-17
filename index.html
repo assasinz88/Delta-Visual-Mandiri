@@ -8,10 +8,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link type="text/css" rel="stylesheet" href="first.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-
+	
+	
 	<script src="js/bootstrap.min.js"></script>
 	<!-- bootstrap js -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -20,197 +19,15 @@
 	<!-- slick carousel -->
 	<script src="https://use.fontawesome.com/b881a9a4a0.js"></script>
 	<!-- font awesome -->
-
-
+	
+	
 	<title> </title>
+	<link type="text/css" rel="stylesheet" href="index.css">
 
-
-
-
-
-
-	<style>
-		.borders {
-			border: 1px solid black;
-		}
-	</style>
 </head>
 
 <body>
-	<style>
-		.header {
-			display: flex;
-			align-items: center;
-			position: fixed;
-			top: 50%;
-			transform: translateY(-50%);
-			z-index: 100;
-			transition: left ease-in-out .5s;
-			/* left: 0; */
-		}
 
-		.menu {
-			padding: 20px 0;
-			background-color: white;
-			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-			z-index: 1000;
-		}
-
-		.menu ul {
-			list-style-type: none;
-			padding: 0;
-			margin: 0;
-		}
-
-		.menu li {
-			padding: 10px 25px;
-			padding-right: 50px;
-			position: relative;
-			cursor: pointer;
-		}
-
-		.nav-overlay {
-			background: #F57C00;
-			transform: scaleX(0);
-			transform-origin: left;
-			left: 0;
-		}
-
-		@keyframes wipe {
-			0% {
-				transform: scaleX(0);
-			}
-			50% {
-				left: 0%;
-				transform: scaleX(1);
-			}
-			100% {
-				left: 100%;
-				transform: scaleX(0);
-			}
-		}
-
-		.menu li:hover {
-			color: #F57C00;
-		}
-
-		.menu li:hover .nav-overlay {
-			animation: wipe 0.5s;
-		}
-
-		.arrow {
-			background-color: #263238;
-			border-radius: 0 10px 10px 0;
-			width: auto;
-			color: white;
-			padding: 30px 15px;
-			cursor: pointer;
-			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-		}
-
-		.arrow i {
-			transition: transform ease-in-out .5s;
-		}
-
-		.about {
-
-			text-align: center;
-			justify-content: center;
-			background-color: #1a2126;
-			height: auto;
-			padding: 100px 50px;
-			color: white;
-			border-right: 8px solid #F57C00;
-		}
-
-		.about h1 {
-			margin: 0;
-		}
-
-		.about p {
-			margin: 20px 0px 50px 0px;
-		}
-
-		.about a{
-			text-decoration:none;
-			color:white;
-			font-size:18px;
-			border:1px solid white;
-			padding: 8px 15px;
-			font-weight:lighter;
-			background-color:#1a2126;
-
-			-webkit-transition:color ease-in-out 0.5s, background-color ease-in-out 0.5s;
-			-moz-transition:color ease-in-out 0.5s, background-color ease-in-out 0.5s;
-			transition:color ease-in-out 0.5s, background-color ease-in-out 0.5s;
-			
-
-		}
-
-		.about a:hover{
-			-webkit-transition:color ease-in-out 0.5s, background-color ease-in-out 0.5s;
-			-moz-transition:color ease-in-out 0.5s, background-color ease-in-out 0.5s;
-			transition:color ease-in-out 0.5s, background-color ease-in-out 0.5s;
-			background-color:white;
-			color:#1a2126;
-		}
-
-		.product {
-			position: relative;
-			color: white;
-			text-align: center;
-			background: url("img/slideshow/1.jpg");
-			background-size: cover;
-			background-repeat: no-repeat;
-			background-position: center bottom;
-
-			height: auto;
-			padding: 100px 50px;
-		}
-
-		.product-intro {
-			z-index: 15;
-			position: relative;
-		}
-
-		.product-intro h1{
-			font-size:45px;
-			margin-bottom:100px;
-		}
-
-		.product-list {
-			display: grid;
-			position: relative;
-			z-index: 15;
-			grid-template-rows: 1fr;
-			grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-			grid-template-areas: "satu dua tiga empat lima";
-		}
-
-		.icon {
-			margin: 0px 20px 20px 20px;
-		}
-
-		.icon img {
-			height: 100px;
-			width: 100px;
-		}
-
-		.icon p {
-			font-size:16px;
-			margin-top: 25px;
-		}
-
-		.filter {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			background: rgba(0, 0, 0, 0.4);
-			z-index: 9;
-		}
-	</style>
 	<div class="header aaa">
 
 		<div class="menu">
@@ -244,7 +61,7 @@
 				pengalaman yaang cukup banyak dalam bidangnya, hal ini didukung oleh tenaga kerja yang handal yang akan selalu siap memberikan
 				yang terbaik kepada client kami</p>
 
-				<a href="#">Learn More >>></a>
+				<a href="about.html">Learn More >>></a>
 		</div>
 	</div>
 
@@ -337,62 +154,62 @@
 	</script>
 
 
-	<link rel="stylesheet" type="text/css" href="footer.css">
-	<div class="footer">
-		<div class="footer-top container-fluid">
-			<div class="footer-nav">
-				<ul style="list-style: none; display: flex; flex-direction: column; justify-content: space-between; height: 100%">
-					<li class="home-button"><a>HOME</a></li>
-					<li class="about-button"><a>ABOUT US</a></li>
-					<li class="gallery-button"><a>GALLERY</a></li>
-					<li class="product-button"><a>OUR PRODUCTS</a></li>
-					<li class="contact-button"><a>CONTACT US</a></li>
-				</ul>
-			</div>
-			<div class="footer-details">
-				<p style="font-weight: bold; margin-bottom: 5px">ADDRESS</p>
-				<p style="margin: 0; margin-bottom: 10px; font-size: 12px">
-					Sentra Bisnis Ayani Megamall AA - 19 Pontianak
-				</p>
-				<p style="font-weight: bold; margin-bottom: 5px">TEL/FAX</p>
-				<p style="margin: 0; font-size: 12px">
-					(0561) 766228
-				</p>
-			</div>
-			<div class="footer-connect">
-				<p style="font-weight: bold; margin-bottom: 5px">CONNECT WITH US</p>
-				<table style="font-size: 12px">
-					<tr>
-						<td colspan="2"><a>Contact</a></td>
-					</tr>
-					<tr>
-						<td><i class="fa fa-envelope-o"></i></td>
-						<td><a href="">dvm.printing@yahoo.co.id</a></td>
-					</tr>
-					<tr>
-						<td><i class="fa fa-instagram"></i></td>
-						<td><a href="">Instagram</a></td>
-					</tr>
-					<tr>
-						<td><i class="fa fa-facebook-official"></i></td>
-						<td><a href="">Facebook</a></td>
-					</tr>
-				</table>
-			</div>
-			<div class="footer-form">
-				<p style="font-weight: bold">SUBSCRIBE TO OUR NEWSLETTER</p>
-				<form style="display: flex">
-					<input type="text" name="email" placeholder="Email address..." style="flex: 1; margin-right: 10px; border: none">
-					<input type="submit" style="padding: 5px 10px; background: #F57C00; border: none;">
-				</form>
-			</div>
+<link rel="stylesheet" type="text/css" href="footer.css">
+<div class="footer">
+	<div class="footer-top container-fluid">
+		<div class="footer-nav">
+			<ul style="list-style: none; display: flex; flex-direction: column; justify-content: space-between; height: 100%">
+				<li><a>HOME</a></li>
+				<li><a>ABOUT US</a></li>
+				<li><a>GALLERY</a></li>
+				<li><a>OUR PRODUCTS</a></li>
+				<li><a>CONTACT US</a></li>
+			</ul>
 		</div>
-		<div class="footer-copyright">
-			<p class="container" style="margin:0; padding:0">
-				&copy; 2017 Delta Visual Mandiri - Proudly designed by <a>Albert Antonio</a> &amp; <a>Laurentius Dominick L.</a>
+		<div class="footer-details">
+			<p style="font-weight: bold; margin-bottom: 5px">ADDRESS</p>
+			<p style="margin: 0; margin-bottom: 10px; font-size: 12px">
+				Sentra Bisnis Ayani Megamall AA - 19 Pontianak
+			</p>
+			<p style="font-weight: bold; margin-bottom: 5px">TEL/FAX</p>
+			<p style="margin: 0; font-size: 12px">
+				(0561) 766228
 			</p>
 		</div>
+		<div class="footer-connect">
+			<p style="font-weight: bold; margin-bottom: 5px">CONNECT WITH US</p>
+			<table style="font-size: 12px">
+				<tr>
+					<td colspan="2"><a>Contact</a></td>
+				</tr>
+				<tr>
+					<td><i class="fa fa-envelope-o"></i></td>
+					<td><a href="">dvm.printing@yahoo.co.id</a></td>
+				</tr>
+				<tr>
+					<td><i class="fa fa-instagram"></i></td>
+					<td><a href="">Instagram</a></td>
+				</tr>
+				<tr>
+					<td><i class="fa fa-facebook-official"></i></td>
+					<td><a href="">Facebook</a></td>
+				</tr>
+			</table>
+		</div>
+		<div class="footer-form">
+			<p style="font-weight: bold">SUBSCRIBE TO OUR NEWSLETTER</p>
+			<form>
+				<input type="text" name="email" placeholder="Email address...">
+				<input type="submit" >
+			</form>
+		</div>
 	</div>
+	<div class="footer-copyright">
+		<p class="container" style="margin:0; padding:0">
+			&copy; 2017 Delta Visual Mandiri - Proudly designed by <a>Albert Antonio</a> &amp; <a>Laurentius Dominick L.</a>
+		</p>
+	</div>
+</div>
 	</div>
 	<script type="text/javascript">
 		$(document).ready(function () {
