@@ -11,25 +11,33 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 
-	<script src="js/bootstrap.min.js"></script>
 	<!-- bootstrap js -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
 	<!-- jquery -->
-	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- jquery-ui -->
+	<script src="js/jquery-ui.min.js"></script>
+
 	<!-- slick carousel -->
-	<script src="https://use.fontawesome.com/b881a9a4a0.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+
 	<!-- font awesome -->
+	<script src="https://use.fontawesome.com/b881a9a4a0.js"></script>
+
+	<!-- sly js -->
+	<script type="text/javascript" src="js/sly.min.js"></script>
 
 
-	<title> </title>
+	<title>Delta Visual Mandiri</title>
 	<link type="text/css" rel="stylesheet" href="index.css">
 
 </head>
 
 <body>
-
+	<link rel="stylesheet" type="text/css" href="header.css">
 	<div class="header aaa">
-
 		<div class="menu">
 			<ul>
 				<li class="home-button">HOME<span class="overlay nav-overlay"></span></li>
@@ -101,30 +109,75 @@
 		</div>
 
 	</div>
+	<style>
+		.carousel {
+			width: 100%;
+		}
 
+		.slidee {
+			list-style: none;
+			padding: 0;
+			flex: none;
+		}
+
+		.slide-slide {
+			/* display: inline-block; */
+			float: left;
+			position: relative;
+			width: 800px;
+			height: 450px;
+			margin: 2px;
+			/* background: black; */
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			position: relative;
+			transition: all ease-in-out .5s;
+		}
+		.slide-slide .caption{
+			top: auto;
+			height: auto;
+			bottom: 0;
+			padding: 15px;
+			color: white;
+			background: rgba(0,0,0,0.5);
+			display: none;
+			transition: display ease-in-out .5s;
+		}
+		.slide-slide h4{
+			font-weight: bold;
+			margin-top: 0;
+		}
+		.slide-slide p{
+			margin: 0;
+		}
+		.slide-slide.active .caption{
+			display: block;
+		}
+	</style>
 	<div class="gallery">
-
+		<h1>GALLERY</h1>
 		<div class="carousel">
-
-			<ul>
-
-				<li>
-
+			<ul class="slidee">
+				<?php for($i = 1; $i <= 5; ++$i): ?>
+				<li class="slide-slide" style="background-image:url('img/gallery-carousel/<?php echo $i?>.jpg')">
+					<div class="overlay caption">
+						<h4>Title <?php echo $i?></h4>
+						<p>Caption example</p>
+					</div>
 				</li>
-
+				<?php endfor;?>
 			</ul>
-
 		</div>
-
 	</div>
 	<script>
-		var $frame = $('.carousel ul');
+		var $frame = $('.carousel');
 		var $wrap = $frame.parent();
 
 		// Call Sly on frame
 		$frame.sly({
 			horizontal: 1,
-			itemNav: 'centered',
+			itemNav: 'forceCentered',
 			smart: 1,
 			activateOn: 'click',
 			mouseDragging: 1,
@@ -175,7 +228,7 @@
 			/* flex-wrap: wrap; */
 			flex-direction: column;
 		}
-		
+
 		.form-section:nth-child(2) input[type="email"] {
 			width: 100%;
 			outline: none;
@@ -187,13 +240,13 @@
 			padding-left: 5px;
 			transition: border-bottom ease-in-out .25s;
 		}
-		
+
 		.form-section:nth-child(2) input[type="email"]::-webkit-input-placeholder {
 			color: #bbb;
 			/* padding-left: 5px; */
 			/* font-weight: bold; */
 		}
-		
+
 		.form-section:nth-child(2) input[type="email"]::-moz-input-placeholder {
 			color: #bbb;
 			/* padding-left: 5px; */
@@ -204,58 +257,30 @@
 			border-bottom: 1.5px solid #F57C00;
 		}
 
-		.form-section:nth-child(2) input[type="text"] {
-			width: 100%;
-			outline: none;
-			border: none;
-			border-bottom: 1.5px solid #bbb;
-			color: black;
-			margin-bottom: 10px;
-			padding-bottom: 5px;
-			padding-left: 5px;
-			transition: border-bottom ease-in-out .25s;
-		}
-		
-		.form-section:nth-child(2) input[type="text"]::-webkit-input-placeholder {
-			color: #bbb;
-			/* padding-left: 5px; */
-			/* font-weight: bold; */
-		}
-		
-		.form-section:nth-child(2) input[type="text"]::-moz-input-placeholder {
-			color: #bbb;
-			/* padding-left: 5px; */
-			/* font-weight: bold; */
-		}
-
-		.form-section:nth-child(2) input[type="text"]:focus {
-			border-bottom: 1.5px solid #F57C00;
-		}
-
 		.form-section:nth-child(2) textarea {
 			color: black;
 			width: 100%;
 			border: none;
 			border-bottom: 1.5px solid #bbb;
 			/* height:75%; */
-			resize:vertical;
+			resize: vertical;
 			margin-bottom: 8px;
 			vertical-align: text-top;
 			padding: 0px 0px 100px 5px;
 			outline: none;
 			transition: border ease-in-out .25s;
 		}
-		
+
 		.form-section:nth-child(2) textarea::-webkit-input-placeholder {
 			color: #bbb;
 			/* font-weight: bold; */
 		}
-		
+
 		.form-section:nth-child(2) textarea::-moz-input-placeholder {
 			color: #bbb;
 			/* font-weight: bold; */
 		}
-		
+
 		.form-section:nth-child(2) textarea:focus {
 			border: none;
 			border-bottom: solid 1.5px #F57C00;
@@ -362,34 +387,33 @@
 			<h3 style="margin-top: 10px">Isi form dibawah ini dan kami akan segera menghubungi Anda!</h3>
 		</div>
 		<div class="object">
-			<form class="form" action="do_mail.php" method="post">
+			<form class="form" action="#" method="post">
 				<div class="form-section">
 					<h4>Pemilihan jasa (pilih sedikitnya satu)</h4>
 					<div class="form-row">
-						<input type="checkbox" id="print" value="Digital Printing" name="jasa[]">
+						<input type="checkbox" id="print" value="print" name="print">
 						<label for="print">Digital Printing</label>
 					</div>
 					<div class="form-row">
-						<input type="checkbox" id="cetak" value="Percetakan" name="jasa[]">
+						<input type="checkbox" id="cetak" value="cetak" name="cetak">
 						<label for="cetak">Percetakan</label>
 					</div>
 					<div class="form-row">
-						<input type="checkbox" id="sign" value="Sign & Neon Box" name="jasa[]">
+						<input type="checkbox" id="sign" value="sign" name="sign">
 						<label for="sign">Sign &amp; Neon Box</label>
 					</div>
 					<div class="form-row">
-						<input type="checkbox" id="reklame" value="Biro Jasa & Reklame" name="jasa[]">
+						<input type="checkbox" id="reklame" value="reklame" name="reklame">
 						<label for="reklame">Jasa &amp; Reklame</label>
 					</div>
 					<div class="form-row">
-						<input type="checkbox" id="sticker" value="Sticker & OWV" name="jasa[]">
+						<input type="checkbox" id="sticker" value="sticker" name="sticker">
 						<label for="sticker">Sticker Mobil &amp; One Way Vision</label>
 					</div>
 				</div>
 				<div class="form-section">
-					<input type="text" placeholder="Nama" name="name">
-					<input type="email" placeholder="Email" name="email">
-					<textarea placeholder="Message" name="message"></textarea>
+					<input type="email" placeholder="Email">
+					<textarea placeholder="Message"></textarea>
 					<input type="submit">
 				</div>
 
@@ -453,7 +477,6 @@
 				&copy; 2017 Delta Visual Mandiri - Proudly designed by <a>Albert Antonio</a> &amp; <a>Laurentius Dominick L.</a>
 			</p>
 		</div>
-	</div>
 	</div>
 	<script type="text/javascript">
 		$(document).ready(function () {
