@@ -204,6 +204,34 @@
 			border-bottom: 1.5px solid #F57C00;
 		}
 
+		.form-section:nth-child(2) input[type="text"] {
+			width: 100%;
+			outline: none;
+			border: none;
+			border-bottom: 1.5px solid #bbb;
+			color: black;
+			margin-bottom: 10px;
+			padding-bottom: 5px;
+			padding-left: 5px;
+			transition: border-bottom ease-in-out .25s;
+		}
+		
+		.form-section:nth-child(2) input[type="text"]::-webkit-input-placeholder {
+			color: #bbb;
+			/* padding-left: 5px; */
+			/* font-weight: bold; */
+		}
+		
+		.form-section:nth-child(2) input[type="text"]::-moz-input-placeholder {
+			color: #bbb;
+			/* padding-left: 5px; */
+			/* font-weight: bold; */
+		}
+
+		.form-section:nth-child(2) input[type="text"]:focus {
+			border-bottom: 1.5px solid #F57C00;
+		}
+
 		.form-section:nth-child(2) textarea {
 			color: black;
 			width: 100%;
@@ -334,33 +362,34 @@
 			<h3 style="margin-top: 10px">Isi form dibawah ini dan kami akan segera menghubungi Anda!</h3>
 		</div>
 		<div class="object">
-			<form class="form" action="#" method="post">
+			<form class="form" action="do_mail.php" method="post">
 				<div class="form-section">
 					<h4>Pemilihan jasa (pilih sedikitnya satu)</h4>
 					<div class="form-row">
-						<input type="checkbox" id="print" value="print" name="print">
+						<input type="checkbox" id="print" value="Digital Printing" name="jasa[]">
 						<label for="print">Digital Printing</label>
 					</div>
 					<div class="form-row">
-						<input type="checkbox" id="cetak" value="cetak" name="cetak">
+						<input type="checkbox" id="cetak" value="Percetakan" name="jasa[]">
 						<label for="cetak">Percetakan</label>
 					</div>
 					<div class="form-row">
-						<input type="checkbox" id="sign" value="sign" name="sign">
+						<input type="checkbox" id="sign" value="Sign & Neon Box" name="jasa[]">
 						<label for="sign">Sign &amp; Neon Box</label>
 					</div>
 					<div class="form-row">
-						<input type="checkbox" id="reklame" value="reklame" name="reklame">
+						<input type="checkbox" id="reklame" value="Biro Jasa & Reklame" name="jasa[]">
 						<label for="reklame">Jasa &amp; Reklame</label>
 					</div>
 					<div class="form-row">
-						<input type="checkbox" id="sticker" value="sticker" name="sticker">
+						<input type="checkbox" id="sticker" value="Sticker & OWV" name="jasa[]">
 						<label for="sticker">Sticker Mobil &amp; One Way Vision</label>
 					</div>
 				</div>
 				<div class="form-section">
-					<input type="email" placeholder="Email">
-					<textarea placeholder="Message"></textarea>
+					<input type="text" placeholder="Nama" name="name">
+					<input type="email" placeholder="Email" name="email">
+					<textarea placeholder="Message" name="message"></textarea>
 					<input type="submit">
 				</div>
 
