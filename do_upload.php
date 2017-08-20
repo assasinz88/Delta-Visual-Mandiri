@@ -3,6 +3,10 @@
 
 
     $path='upload/';
+
+    $title=$_POST['title'];
+    $caption=$_POST['caption'];
+
     $imgname=$path.basename($_FILES['upload']['name']);
 
     $img=$_FILES['upload']['name'];
@@ -22,7 +26,7 @@
             header("Location: admin.php");
         exit;
     }
-$query="INSERT INTO upload (id,upload) values ('','$imgname')";
+$query="INSERT INTO upload (id,upload,title,caption) values ('','$imgname','$title','$caption')";
 $enter=mysqli_query($con,$query);
 
 header("Location:admin.php");

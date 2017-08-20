@@ -146,7 +146,7 @@
 
     <form action="do_login.php" method="post">
     <div class="form-section">
-        <input type="text" placeholder="Username" name="username">
+		<input type="text" placeholder="Username" name="username">
         <input type="password" placeholder="Password" name="password">
         <input type="submit">
 	</div>

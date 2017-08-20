@@ -29,6 +29,8 @@
     <div class="form-upload">
         <form action="do_upload.php" method="post" enctype="multipart/form-data" id="form1" runat="server">
 
+            <input type="text" name="title" placeholder="title" />
+            <input type="text" name="caption" placeholder="caption" />
             <input type='file' id="upload" name="upload" />
             <input type="submit">
             <img alt="Image Display Here" id="image" />
@@ -61,18 +63,24 @@
             <th>ID</th>
             <th>Nama</th>
             <th>Preview</th>
+            <th>Title</th>
+            <th>Caption</th>
             <th>Action</th>
         </tr>
         <?php
         while($sql=mysqli_fetch_array($enter)){
             $id=$sql[0];
             $upload=$sql[1];
+            $title=$sql[2];
+            $caption=$sql[3];
         
         ?>
         <tr>
             <td><?php echo $id;?></td>
             <td><?php echo $upload;?></td>
             <td><img src="<?php echo $upload; ?>"></td>
+            <td><?php echo $title; ?></td>
+            <td><?php echo $caption; ?></td>
             <td><a href="do_delete.php?id=<?php echo $id; ?>">Delete</a></td>
         </tr>
         <?php } ?>
