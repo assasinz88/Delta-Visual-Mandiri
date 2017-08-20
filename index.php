@@ -36,6 +36,7 @@
 </head>
 
 <body>
+	<script type="text/javascript" src="header.js"></script>
 	<link rel="stylesheet" type="text/css" href="header.css">
 	<div class="header aaa">
 		<div class="menu">
@@ -51,17 +52,17 @@
 		<div class="arrow"><i class="fa fa-chevron-right" aria-aaa="true"></i></div>
 	</div>
 
+	<!-- PARTICLE -->
 	<div class="container-fluid" id="top">
 		<div id="network"></div>
 		<div class="overlay home" style="display: flex;align-items: center;justify-content: center;flex-direction: column;">
 			<h1 class="quote motto" style="text-align:center">Delta Visual Mandiri</h1>
 			<h3 class="motto quote" style="font-style:italic">"Kepercayaan Anda Kebanggaan Kami"</h3>
 		</div>
-
-
 	</div>
 	<script type="text/javascript" src="js/particle-network.min.js"></script>
-
+	
+	<!-- ABOUT -->
 	<div class="about">
 		<div>
 			<h1>"Kepercayaan Anda Kebanggaan Kami"</h1>
@@ -73,6 +74,7 @@
 		</div>
 	</div>
 
+	<!-- OUR PRODUCTS -->
 	<div class="product">
 		<div class="filter"></div>
 		<div class="product-intro">
@@ -110,6 +112,20 @@
 
 	</div>
 	<style>
+		.gallery{
+			padding: 50px 0;
+			background: #222;
+			position: relative;
+		}
+		.gallery h1{
+			color: white;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 50px;
+			font-weight: bold;
+			width: 100%;
+			text-align: center;
+			margin-bottom: 50px;
+		}
 		.carousel {
 			width: 100%;
 		}
@@ -126,7 +142,7 @@
 			position: relative;
 			width: 800px;
 			height: 450px;
-			margin: 2px;
+			margin: 20px;
 			/* background: black; */
 			background-size: cover;
 			background-position: center;
@@ -134,28 +150,44 @@
 			position: relative;
 			transition: all ease-in-out .5s;
 		}
-		.slide-slide .caption{
+		.caption{
 			top: auto;
 			height: auto;
 			bottom: 0;
 			padding: 15px;
 			color: white;
 			background: rgba(0,0,0,0.5);
-			display: none;
-			transition: display ease-in-out .5s;
+			opacity: 0;
+			transition: opacity ease-in-out .5s;
 		}
-		.slide-slide h4{
+		.caption h4{
 			font-weight: bold;
 			margin-top: 0;
 		}
-		.slide-slide p{
+		.caption p{
 			margin: 0;
 		}
+		.slide-slide.active{
+			transform: scale(1.01);
+			z-index: 100;
+		}
 		.slide-slide.active .caption{
-			display: block;
+			opacity: 1;
+		}
+		.scrollbar {
+			width: 100%;
+			margin-top: 20px;
+			height: 2px;
+		}
+		.scrollbar .handle {
+			width: 100px;
+			height: 100%;
+			background-color: #A80D26;
+			cursor: move;
 		}
 	</style>
 	<div class="gallery">
+		<div class="overlay" onClick="style.pointerEvents='none'"></div>
 		<h1>GALLERY</h1>
 		<div class="carousel">
 			<ul class="slidee">
@@ -168,6 +200,9 @@
 				</li>
 				<?php endfor;?>
 			</ul>
+		</div>
+		<div class="scrollbar">
+			<div class="handle"></div>
 		</div>
 	</div>
 	<script>
@@ -531,21 +566,6 @@
 					centerY - posY) / strength + 'px)');
 				$('#network canvas').css('transform', 'translate(' + (centerX - posX) / (strength / 2) + 'px, ' + (
 					centerY - posY) / (strength / 2) + 'px)');
-			});
-
-			$(".arrow").click(function () {
-				console.log($('.menu').width());
-				console.log($('.arrow').css('left'));
-				if (!$('.header').hasClass("aaa")) {
-					$(".header").css('left', -$('.menu').width() + 'px');
-					$(".arrow i").css('transform', 'rotate(0deg)');
-					$('.header').addClass("aaa");
-
-				} else {
-					$(".header").css('left', '0');
-					$('.header').removeClass("aaa");
-					$(".arrow i").css('transform', 'rotate(180deg)');
-				}
 			});
 
 			$(".home-button").click(function () {
