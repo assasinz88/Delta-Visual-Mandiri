@@ -24,9 +24,8 @@ $mail->Port = 465;                                    // TCP port to connect to
 
 // $mail->SMTPDebug = 1;
 
-$mail->setFrom('from@example.com', 'Web DVM');
+$mail->setFrom($email, $name);
 $mail->addAddress('albertantonio88@gmail.com', 'Albert Antonio');     // Add a recipient
-$mail->addAddress('ellen@example.com');               // Name is optional
 $mail->addReplyTo($email, $name);
 
 $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
