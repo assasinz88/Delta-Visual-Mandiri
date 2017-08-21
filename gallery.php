@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 
 	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Libre+Baskerville:400i|Montserrat" rel="stylesheet">
@@ -30,9 +29,10 @@
 	<script type="text/javascript" src="js/sly.min.js"></script>
 
 
-	<title>Delta Visual Mandiri</title>
+	<title>Gallery | Delta Visual Mandiri</title>
+	
+	<link type="text/css" rel="stylesheet" href="gallery.css">
 	<link type="text/css" rel="stylesheet" href="index.css">
-
 </head>
 
 <?php
@@ -45,60 +45,18 @@
 	<div class="header aaa">
 		<div class="menu">
 			<ul>
-				<li class="home-button">HOME<span class="overlay nav-overlay"></span></li>
-				<li class="about-button">ABOUT US<span class="overlay nav-overlay"></span></li>
-				<li class="product-button">OUR PRODUCTS<span class="overlay nav-overlay"></span></li>
-				<li class="gallery-button">GALLERY<span class="overlay nav-overlay"></span></li>
-				<li class="contact-button">CONTACT US<span class="overlay nav-overlay"></span></li>
+				<li class="home-button"><a>HOME</a><span class="overlay nav-overlay"></span></li>
+				<li class="about-button"><a href="about.html">ABOUT US</a><span class="overlay nav-overlay"></span></li>
+				<li class="product-button"><a>OUR PRODUCTS</a><span class="overlay nav-overlay"></span></li>
+				<li class="gallery-button"><a>GALLERY</a><span class="overlay nav-overlay"></span></li>
+				<li class="contact-button"><a>CONTACT US</a><span class="overlay nav-overlay"></span></li>
 			</ul>
 
 		</div>
 		<div class="arrow"><i class="fa fa-chevron-right" aria-aaa="true"></i></div>
 	</div>
 	<style>
-		.columns{
-			column-width: 320px;
-			column-gap: 15px;
-			width: 90%;
-			max-width: 1100px;
-			margin: 50px auto;
-		}
-		.columns figure{
-			background: #fefefe;
-			border: 2px solid #fcfcfc;
-			box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-			margin: 0 2px 15px;
-			padding: 15px;
-			/* padding-bottom: 10px; */
-			transition: all 0.4s cubic-bezier(.25,.8,.25,1);
-			display: inline-block;
-			column-break-inside: avoid;
-			cursor: pointer;
-		}
-
-		.caption h4{
-			font-weight: bold;
-			/* margin-top: 0; */
-		}
-		.caption p{
-			margin: 0;
-		}
-		.columns figure img {
-			width: 100%; height: auto;
-			border-bottom: 1px solid #ccc;
-			padding-bottom: 15px;
-			margin-bottom: 5px;
-		}
-		.columns:hover figure:not(:hover) {
-			opacity: 0.4;
-		}
-		.columns figure:hover{
-			box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-		}
-		@media screen and (max-width: 750px) { 
-			.columns { column-gap: 0px; }
-			.columns figure { width: 100%; }
-		}
+		
 	</style>
 	<div class="columns">
 		<?php 
@@ -118,54 +76,12 @@
 			<figcaption class="caption">
 				<h4><?php echo $title; ?></h4>
 				<p><?php echo $caption; ?></p>
-			</f>
+			</figcaption>
 		</figure>
 			<?php } ?>
 	</div>
 	<style>
-		.modall{
-			z-index: -100;
-			opacity: 0;
-			background: rgba(0,0,0,0.5);
-			position: fixed;
-		}
-		.modall-box{
-			top: -100%;
-			overflow-y: scroll;
-			background: #fefefe;
-			border: 2px solid #fcfcfc;
-			box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-			padding: 30px;
-			/* padding-bottom: 10px; */
-			transition: all 0.4s cubic-bezier(.25,.8,.25,1);
-			margin: 20px auto;
-			height: auto;
-			max-height: 90%;
-			width: 90%;
-			max-width: 1100px;
-			background: white;
-			position: relative;
-		}
-		.modall-box figure{
-			padding: 30px;
-			margin: 0 auto;
-		}
-		.modall-box figure img{
-			width: 100%; height: auto;
-			border-bottom: 1px solid #ccc;
-			padding-bottom: 15px;
-			margin-bottom: 5px;
-		}
-		.modall-box .fa-times{
-			width: 100%;
-			text-align: right;
-			color: #999;
-			font-size: 20px;
-			cursor: pointer;
-		}
-		.modall-box .fa-times:hover{
-			color: black;
-		}
+		
 	</style>
 	<div class="overlay modall" >
 		<div class="modall-box">
