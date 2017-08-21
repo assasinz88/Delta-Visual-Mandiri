@@ -1,12 +1,23 @@
 <html>
-    <header>
-        <title>
+    <head>
+		<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Libre+Baskerville:400i|Montserrat" rel="stylesheet">
 
-		</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<!-- bootstrap js -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- jquery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!-- jquery-ui -->
+		<script src="js/jquery-ui.min.js"></script>
+		<!-- font awesome -->
+		<script src="https://use.fontawesome.com/b881a9a4a0.js"></script>
+
+		<title>DVM Login</title>
 		
-
-    </header>
-
+    </head>
     <body>
 
 	<?php
@@ -20,22 +31,19 @@
 	?>
 
     <style>
-		.errormsg{
-			color:red;
-			text-align:center;
-		}
 
-        .form-section {
+        form {
 			width: 25%;
 			display: flex;
 			/* flex-wrap: wrap; */
             flex-direction: column;
-            margin:0 auto;
+			margin:0 auto;
+			margin-top: 20px;
             border:1.5px solid #bbb;
             padding:20px;
 		}
 		
-		.form-section input[type="password"] {
+		form input[type="password"] {
 			width: 100%;
 			outline: none;
 			border: none;
@@ -47,23 +55,23 @@
 			transition: border-bottom ease-in-out .25s;
 		}
 		
-		.form-section input[type="password"]::-webkit-input-placeholder {
+		form input[type="password"]::-webkit-input-placeholder {
 			color: #bbb;
 			/* padding-left: 5px; */
 			/* font-weight: bold; */
 		}
 		
-		.form-section input[type="password"]::-moz-input-placeholder {
+		form input[type="password"]::-moz-input-placeholder {
 			color: #bbb;
 			/* padding-left: 5px; */
 			/* font-weight: bold; */
 		}
 
-		.form-section input[type="password"]:focus {
+		form input[type="password"]:focus {
 			border-bottom: 1.5px solid #F57C00;
 		}
 
-		.form-section input[type="text"] {
+		form input[type="text"] {
 			width: 100%;
 			outline: none;
 			border: none;
@@ -75,23 +83,23 @@
 			transition: border-bottom ease-in-out .25s;
 		}
 		
-		.form-section input[type="text"]::-webkit-input-placeholder {
+		form input[type="text"]::-webkit-input-placeholder {
 			color: #bbb;
 			/* padding-left: 5px; */
 			/* font-weight: bold; */
 		}
 		
-		.form-section input[type="text"]::-moz-input-placeholder {
+		form input[type="text"]::-moz-input-placeholder {
 			color: #bbb;
 			/* padding-left: 5px; */
 			/* font-weight: bold; */
 		}
 
-		.form-section input[type="text"]:focus {
+		form input[type="text"]:focus {
 			border-bottom: 1.5px solid #F57C00;
 		}
 
-		.form-section textarea {
+		form textarea {
 			color: black;
 			width: 100%;
 			border: none;
@@ -105,23 +113,23 @@
 			transition: border ease-in-out .25s;
 		}
 		
-		.form-section textarea::-webkit-input-placeholder {
+		form textarea::-webkit-input-placeholder {
 			color: #bbb;
 			/* font-weight: bold; */
 		}
 		
-		.form-section textarea::-moz-input-placeholder {
+		form textarea::-moz-input-placeholder {
 			color: #bbb;
 			/* font-weight: bold; */
 		}
 		
-		.form-section textarea:focus {
+		form textarea:focus {
 			border: none;
 			border-bottom: solid 1.5px #F57C00;
 			/* border-color: white; */
 		}
 
-		.form-section input[type="submit"] {
+		form input[type="submit"] {
 			border: 1.5px solid #bbb;
 			padding: 5px 10px;
 			background: none;
@@ -134,7 +142,7 @@
 			transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
 		}
 
-		.form-section input[type="submit"]:hover {
+		form input[type="submit"]:hover {
 			background: #bbb;
 			color: white;
 			/* border: #bbb; */
@@ -142,16 +150,18 @@
 	</style>
 	
 
-	<div class="errormsg"><?php echo $error; ?></div>
-
-    <form action="do_login.php" method="post">
-    <div class="form-section">
-        <input type="text" placeholder="Username" name="username">
-        <input type="password" placeholder="Password" name="password">
-        <input type="submit">
-	</div>
 	
-
+    <form action="do_login.php" method="post">
+		<div class="form-group">
+			<label class="text-danger"><?php echo $error; ?></label>
+		</div>
+		<div class="form-group">
+			<input type="text" placeholder="Username" name="username">
+		</div>
+        <div class="form-group">
+			<input type="password" placeholder="Password" name="password">
+		</div>
+        <input type="submit">
     </form>
 
 
