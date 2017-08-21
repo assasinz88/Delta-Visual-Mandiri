@@ -152,6 +152,7 @@
 
 	
     <form action="do_login.php" method="post">
+<<<<<<< HEAD
 		<div class="form-group">
 			<label class="text-danger"><?php echo $error; ?></label>
 		</div>
@@ -161,6 +162,11 @@
         <div class="form-group">
 			<input type="password" placeholder="Password" name="password">
 		</div>
+=======
+    <div class="form-section">
+		<input type="text" placeholder="Username" name="username">
+        <input type="password" placeholder="Password" name="password">
+>>>>>>> origin/master
         <input type="submit">
     </form>
 
