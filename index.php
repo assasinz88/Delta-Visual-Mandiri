@@ -246,7 +246,7 @@
 			</div>
 			<div class="footer-form">
 				<p style="font-weight: bold">SUBSCRIBE TO OUR NEWSLETTER</p>
-				<form>
+				<form action="do_subscribe.php" method="post">
 					<input type="text" name="email" placeholder="Email address...">
 					<input type="submit">
 				</form>
