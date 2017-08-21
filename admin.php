@@ -30,7 +30,14 @@
     </head>
 
     <body>
-<<<<<<< HEAD
+        
+        <div class="sidebar">
+            <ul>
+                <li>Gallery Upload</li>
+                <li>Broadcast Message</li>
+                <li>Inbox Message</li>
+            </ul>
+        </div>
         <div class="form-upload">
             <form action="do_upload.php" method="post" enctype="multipart/form-data" id="form1" runat="server">
                 <input type='file' id="upload" name="upload" />
@@ -49,34 +56,9 @@
             
                 // read the image file as a data URL.
                 reader.readAsDataURL(this.files[0]);
-=======
-
-
-    <div class="form-upload">
-        <form action="do_upload.php" method="post" enctype="multipart/form-data" id="form1" runat="server">
-
-            <input type="text" name="title" placeholder="title" />
-            <input type="text" name="caption" placeholder="caption" />
-            <input type='file' id="upload" name="upload" />
-            <input type="submit">
-            <img alt="Image Display Here" id="image" />
-
-        </form>
-
-    </div>
-    <script type="text/javascript">
-        
-        document.getElementById("upload").onchange = function () {
-            var reader = new FileReader();
-        
-            reader.onload = function (e) {
-                // get loaded data and render thumbnail.
-                document.getElementById("image").src = e.target.result;
->>>>>>> origin/master
             };
         </script>
         
-<<<<<<< HEAD
         <?php
             $q = "SELECT * FROM upload";
             $enter = mysqli_query($con,$q);
@@ -101,45 +83,6 @@
             </tr>
             <?php } ?>
         </table>
-=======
-            // read the image file as a data URL.
-            reader.readAsDataURL(this.files[0]);
-        };
-        
-    </script>
-    
-    <?php
-        $q = "SELECT * FROM upload";
-        $enter = mysqli_query($con,$q);
-    ?>
-    <table class="table table-bordered table-hover">
-        <tr class="info">
-            <th>ID</th>
-            <th>Nama</th>
-            <th>Preview</th>
-            <th>Title</th>
-            <th>Caption</th>
-            <th>Action</th>
-        </tr>
-        <?php
-        while($sql=mysqli_fetch_array($enter)){
-            $id=$sql[0];
-            $upload=$sql[1];
-            $title=$sql[2];
-            $caption=$sql[3];
-        
-        ?>
-        <tr>
-            <td><?php echo $id;?></td>
-            <td><?php echo $upload;?></td>
-            <td><img src="<?php echo $upload; ?>"></td>
-            <td><?php echo $title; ?></td>
-            <td><?php echo $caption; ?></td>
-            <td><a href="do_delete.php?id=<?php echo $id; ?>">Delete</a></td>
-        </tr>
-        <?php } ?>
-    </table>
->>>>>>> origin/master
 
         <div class="logout"><a href="do_logout.php">logout </a></div>
 
