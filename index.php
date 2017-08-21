@@ -20,9 +20,6 @@
 	<!-- jquery-ui -->
 	<script src="js/jquery-ui.min.js"></script>
 
-	<!-- slick carousel -->
-	<script type="text/javascript" src="slick/slick.min.js"></script>
-
 	<!-- font awesome -->
 	<script src="https://use.fontawesome.com/b881a9a4a0.js"></script>
 
@@ -55,9 +52,10 @@
 	<!-- PARTICLE -->
 	<div class="container-fluid" id="top">
 		<div id="network"></div>
-		<div class="overlay home" style="display: flex;align-items: center;justify-content: center;flex-direction: column;">
-			<h1 class="quote motto" style="text-align:center">Delta Visual Mandiri</h1>
-			<h3 class="motto quote" style="font-style:italic">"Kepercayaan Anda Kebanggaan Kami"</h3>
+		<div class="overlay home motto" style="display: flex;align-items: center;justify-content: center;flex-direction: column;">
+			<h1 class="quote" style="text-align:center">Delta Visual Mandiri</h1>
+			<img src="img/logo1.png" alt="logo" >
+			<h3 class="quote" style="font-style:italic">"Kepercayaan Anda Kebanggaan Kami"</h3>
 		</div>
 	</div>
 	<script type="text/javascript" src="js/particle-network.min.js"></script>
@@ -111,81 +109,6 @@
 		</div>
 
 	</div>
-	<style>
-		.gallery{
-			padding: 50px 0;
-			background: #222;
-			position: relative;
-		}
-		.gallery h1{
-			color: white;
-			font-family: 'Montserrat', sans-serif;
-			font-size: 50px;
-			font-weight: bold;
-			width: 100%;
-			text-align: center;
-			margin-bottom: 50px;
-		}
-		.carousel {
-			width: 100%;
-		}
-
-		.slidee {
-			list-style: none;
-			padding: 0;
-			flex: none;
-		}
-
-		.slide-slide {
-			/* display: inline-block; */
-			float: left;
-			position: relative;
-			width: 800px;
-			height: 450px;
-			margin: 20px;
-			/* background: black; */
-			background-size: cover;
-			background-position: center;
-			background-repeat: no-repeat;
-			position: relative;
-			transition: all ease-in-out .5s;
-		}
-		.caption{
-			top: auto;
-			height: auto;
-			bottom: 0;
-			padding: 15px;
-			color: white;
-			background: rgba(0,0,0,0.5);
-			opacity: 0;
-			transition: opacity ease-in-out .5s;
-		}
-		.caption h4{
-			font-weight: bold;
-			margin-top: 0;
-		}
-		.caption p{
-			margin: 0;
-		}
-		.slide-slide.active{
-			transform: scale(1.01);
-			z-index: 100;
-		}
-		.slide-slide.active .caption{
-			opacity: 1;
-		}
-		.scrollbar {
-			width: 100%;
-			margin-top: 20px;
-			height: 2px;
-		}
-		.scrollbar .handle {
-			width: 100px;
-			height: 100%;
-			background-color: #A80D26;
-			cursor: move;
-		}
-	</style>
 	<div class="gallery">
 		<div class="overlay" onClick="style.pointerEvents='none'"></div>
 		<h1>GALLERY</h1>
@@ -238,215 +161,6 @@
 			next: $wrap.find('.next')
 		});
 	</script>
-
-	<style>
-		.order-intro {
-			padding-bottom: 20px;
-			width: 100%;
-			border-bottom: solid 1px #222;
-			margin-bottom: 20px;
-		}
-
-		.form {
-			display: flex;
-			justify-content: space-between;
-
-			/* border-left: solid 5px #ddd; */
-			/* padding-left: 20px; */
-			/* padding: 10px 0 10px 20px; */
-			margin: 20px 0;
-		}
-
-		.form-section:nth-child(2) {
-			width: 50%;
-			display: flex;
-			/* flex-wrap: wrap; */
-			flex-direction: column;
-		}
-
-		.form-section:nth-child(2) input[type="email"] {
-			width: 100%;
-			outline: none;
-			border: none;
-			border-bottom: 1.5px solid #bbb;
-			color: black;
-			margin-bottom: 10px;
-			padding-bottom: 5px;
-			padding-left: 5px;
-			transition: border-bottom ease-in-out .25s;
-		}
-
-		.form-section:nth-child(2) input[type="email"]::-webkit-input-placeholder {
-			color: #bbb;
-			/* padding-left: 5px; */
-			/* font-weight: bold; */
-		}
-
-		.form-section:nth-child(2) input[type="email"]::-moz-input-placeholder {
-			color: #bbb;
-			/* padding-left: 5px; */
-			/* font-weight: bold; */
-		}
-
-		.form-section:nth-child(2) input[type="email"]:focus {
-			border-bottom: 1.5px solid #F57C00;
-		}
-
-		.form-section:nth-child(2) input[type="text"] {
-			width: 100%;
-			outline: none;
-			border: none;
-			border-bottom: 1.5px solid #bbb;
-			color: black;
-			margin-bottom: 10px;
-			padding-bottom: 5px;
-			padding-left: 5px;
-			transition: border-bottom ease-in-out .25s;
-		}
-
-		.form-section:nth-child(2) input[type="text"]::-webkit-input-placeholder {
-			color: #bbb;
-			/* padding-left: 5px; */
-			/* font-weight: bold; */
-		}
-
-		.form-section:nth-child(2) input[type="text"]::-moz-input-placeholder {
-			color: #bbb;
-			/* padding-left: 5px; */
-			/* font-weight: bold; */
-		}
-
-		.form-section:nth-child(2) input[type="text"]:focus {
-			border-bottom: 1.5px solid #F57C00;
-		}
-
-		.form-section:nth-child(2) textarea {
-			color: black;
-			width: 100%;
-			border: none;
-			border-bottom: 1.5px solid #bbb;
-			/* height:75%; */
-			resize: vertical;
-			margin-bottom: 8px;
-			vertical-align: text-top;
-			padding: 0px 0px 100px 5px;
-			outline: none;
-			transition: border ease-in-out .25s;
-		}
-
-		.form-section:nth-child(2) textarea::-webkit-input-placeholder {
-			color: #bbb;
-			/* font-weight: bold; */
-		}
-
-		.form-section:nth-child(2) textarea::-moz-input-placeholder {
-			color: #bbb;
-			/* font-weight: bold; */
-		}
-
-		.form-section:nth-child(2) textarea:focus {
-			border: none;
-			border-bottom: solid 1.5px #F57C00;
-			/* border-color: white; */
-		}
-
-		.form-section:nth-child(2) input[type="submit"] {
-			border: 1.5px solid #bbb;
-			padding: 5px 10px;
-			background: none;
-			color: #bbb;
-			font-weight: lighter;
-			align-self: flex-start;
-
-			-webkit-transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
-			-moz-transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
-			transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
-		}
-
-		.form-section:nth-child(2) input[type="submit"]:hover {
-			background: #bbb;
-			color: white;
-			/* border: #bbb; */
-		}
-
-		.form-section h4 {
-			font-weight: bold;
-			margin-bottom: 20px;
-		}
-
-		.form-row [type="checkbox"] {
-			display: none;
-		}
-
-		@keyframes wipe2 {
-			0% {
-				width: 0;
-			}
-			50% {
-				width: 100%;
-				left: 0;
-			}
-			100% {
-				width: 0;
-				left: 100%;
-			}
-		}
-
-		.form-row [type="checkbox"]+label::before {
-			position: absolute;
-			display: block;
-			content: '';
-			width: 0;
-			background: #F57C00;
-			height: 100%;
-			top: 0;
-			left: 0;
-		}
-
-		.form-row [type="checkbox"]+label::after {
-			position: absolute;
-			display: block;
-			content: '';
-			width: 0;
-			background: #bbb;
-			height: 100%;
-			top: 0;
-			left: 0;
-		}
-
-		.form-row [type="checkbox"]:checked+label::before {
-			animation: wipe2 .5s;
-		}
-
-		.form-row [type="checkbox"]:not(:checked)+label::after {
-			animation: wipe2 .5s reverse;
-		}
-
-		.form-row [type="checkbox"]:checked+label {
-			color: #F57C00;
-		}
-
-		.form-row [type="checkbox"]+label {
-			position: relative;
-			font-size: 15px;
-			font-weight: normal;
-			transition: color ease-in-out .5s;
-			cursor: pointer;
-			color: #bbb;
-			-webkit-user-select: none;
-			/* Chrome/Safari */
-			-moz-user-select: none;
-			/* Firefox */
-			-ms-user-select: none;
-			/* IE10+ */
-			/* Rules below not implemented in browsers yet */
-			-o-user-select: none;
-			user-select: none;
-		}
-
-
-		}
-	</style>
 	<div class="order">
 		<div class="order-intro">
 			<h1>Kabari Kami Sekarang!</h1>
@@ -465,15 +179,15 @@
 						<label for="cetak">Percetakan</label>
 					</div>
 					<div class="form-row">
-						<input type="checkbox" id="sign" value="Sign & Neon Box" name="jasa[]">
+						<input type="checkbox" id="sign" value="Sign &amp; Neon Box" name="jasa[]">
 						<label for="sign">Sign &amp; Neon Box</label>
 					</div>
 					<div class="form-row">
-						<input type="checkbox" id="reklame" value="Biro Jasa & Reklame" name="jasa[]">
+						<input type="checkbox" id="reklame" value="Biro Jasa &amp; Reklame" name="jasa[]">
 						<label for="reklame">Biro Jasa &amp; Reklame</label>
 					</div>
 					<div class="form-row">
-						<input type="checkbox" id="sticker" value="Sticker & OWV" name="jasa[]">
+						<input type="checkbox" id="sticker" value="Sticker &amp; OWV" name="jasa[]">
 						<label for="sticker">Sticker Mobil &amp; One Way Vision</label>
 					</div>
 				</div>
@@ -497,6 +211,7 @@
 					<li><a href="index.php">HOME</a></li>
 					<li><a href="about.html">ABOUT US</a></li>
 					<li><a href="gallery.php">GALLERY</a></li>
+					<li><a href="">ORDER NOW</a></li>
 				</ul>
 			</div>
 			<div class="footer-details">
