@@ -35,6 +35,10 @@
 
 </head>
 
+<?php
+	include 'connect.php';
+?>
+
 <body>
     <script type="text/javascript" src="header.js"></script>
 	<link rel="stylesheet" type="text/css" href="header.css">
@@ -97,15 +101,26 @@
 		}
 	</style>
 	<div class="columns">
-		<?php for($i=1;$i<=14;++$i):?>
+		<?php 
+			$q = "SELECT * FROM upload";
+			$enter = mysqli_query($con,$q);
+
+			while($sql=mysqli_fetch_array($enter)){
+				$upload=$sql[1];
+				$title=$sql[2];
+				$caption=$sql[3];
+			
+
+
+		?>
 		<figure class="card" onclick="showModal(event, this)">
-			<img src="img/gallery/<?php echo $i?>.jpg" alt="">
+			<img src="<?php echo $upload; ?>" alt="Image couldnt be buffered">
 			<figcaption class="caption">
-				<h4>Title <?php echo $i?></h4>
-				<p>Caption example <?php echo $i?></p>
+				<h4><?php echo $title; ?></h4>
+				<p><?php echo $caption; ?></p>
 			</f>
 		</figure>
-		<?php endfor;?>
+			<?php } ?>
 	</div>
 	<style>
 		.modall{
@@ -192,11 +207,10 @@
 		<div class="footer-top container-fluid">
 			<div class="footer-nav">
 				<ul style="list-style: none; display: flex; flex-direction: column; justify-content: space-between; height: 100%">
-					<li><a>HOME</a></li>
-					<li><a>ABOUT US</a></li>
-					<li><a>GALLERY</a></li>
-					<li><a>OUR PRODUCTS</a></li>
-					<li><a>CONTACT US</a></li>
+					<li><a href="index.php">HOME</a></li>
+					<li><a href="about.html">ABOUT US</a></li>
+					<li><a href="gallery.php">GALLERY</a></li>
+
 				</ul>
 			</div>
 			<div class="footer-details">
